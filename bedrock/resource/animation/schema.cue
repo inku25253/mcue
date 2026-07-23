@@ -3,8 +3,8 @@
 package animation
 
 import (
-	v1_10_0 "example.com/mcue/bedrock/resource/animation/v1_10_0"
-	v1_8_0 "example.com/mcue/bedrock/resource/animation/v1_8_0"
+	v1_10_0 "github.com/inku25253/mcue/bedrock/resource/animation/v1_10_0"
+	v1_8_0 "github.com/inku25253/mcue/bedrock/resource/animation/v1_8_0"
 )
 #Schema: {
 	FormatVersion="format_version": ("1.10.0" | "1.8.0")

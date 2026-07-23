@@ -4,13 +4,13 @@
 package feature
 
 import (
-	v1_13_0 "example.com/mcue/bedrock/behavior/feature/v1_13_0"
-	v1_16_0 "example.com/mcue/bedrock/behavior/feature/v1_16_0"
-	v1_16_100 "example.com/mcue/bedrock/behavior/feature/v1_16_100"
-	v1_21_40 "example.com/mcue/bedrock/behavior/feature/v1_21_40"
-	v1_21_60 "example.com/mcue/bedrock/behavior/feature/v1_21_60"
-	v1_26_10 "example.com/mcue/bedrock/behavior/feature/v1_26_10"
-	v1_26_30 "example.com/mcue/bedrock/behavior/feature/v1_26_30"
+	v1_13_0 "github.com/inku25253/mcue/bedrock/behavior/feature/v1_13_0"
+	v1_16_0 "github.com/inku25253/mcue/bedrock/behavior/feature/v1_16_0"
+	v1_16_100 "github.com/inku25253/mcue/bedrock/behavior/feature/v1_16_100"
+	v1_21_40 "github.com/inku25253/mcue/bedrock/behavior/feature/v1_21_40"
+	v1_21_60 "github.com/inku25253/mcue/bedrock/behavior/feature/v1_21_60"
+	v1_26_10 "github.com/inku25253/mcue/bedrock/behavior/feature/v1_26_10"
+	v1_26_30 "github.com/inku25253/mcue/bedrock/behavior/feature/v1_26_30"
 )
 #Schema: {
 	FormatVersion="format_version": ("1.13.0" | "1.16.0" | "1.16.100" | "1.21.40" | "1.21.60" | "1.26.10" | "1.26.30")

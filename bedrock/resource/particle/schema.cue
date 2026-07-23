@@ -3,9 +3,9 @@
 package particle
 
 import (
-	v1_10_0 "example.com/mcue/bedrock/resource/particle/v1_10_0"
-	v1_26_10 "example.com/mcue/bedrock/resource/particle/v1_26_10"
-	v1_26_30 "example.com/mcue/bedrock/resource/particle/v1_26_30"
+	v1_10_0 "github.com/inku25253/mcue/bedrock/resource/particle/v1_10_0"
+	v1_26_10 "github.com/inku25253/mcue/bedrock/resource/particle/v1_26_10"
+	v1_26_30 "github.com/inku25253/mcue/bedrock/resource/particle/v1_26_30"
 )
 #Schema: {
 	FormatVersion="format_version": ("1.10.0" | "1.26.10" | "1.26.30")

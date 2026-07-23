@@ -3,7 +3,7 @@
 package voxel_shape
 
 import (
-	v1_21_110 "example.com/mcue/bedrock/behavior/voxel_shape/v1_21_110"
+	v1_21_110 "github.com/inku25253/mcue/bedrock/behavior/voxel_shape/v1_21_110"
 )
 #Schema: {
 	FormatVersion="format_version": ("1.21.110")

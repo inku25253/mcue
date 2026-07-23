@@ -3,10 +3,10 @@
 package client_item
 
 import (
-	v1_10 "example.com/mcue/bedrock/resource/client_item/v1_10"
-	v1_14 "example.com/mcue/bedrock/resource/client_item/v1_14"
-	v1_16 "example.com/mcue/bedrock/resource/client_item/v1_16"
-	v1_16_0 "example.com/mcue/bedrock/resource/client_item/v1_16_0"
+	v1_10 "github.com/inku25253/mcue/bedrock/resource/client_item/v1_10"
+	v1_14 "github.com/inku25253/mcue/bedrock/resource/client_item/v1_14"
+	v1_16 "github.com/inku25253/mcue/bedrock/resource/client_item/v1_16"
+	v1_16_0 "github.com/inku25253/mcue/bedrock/resource/client_item/v1_16_0"
 )
 #Schema: {
 	FormatVersion="format_version": ("1.10" | "1.14" | "1.16" | "1.16.0")

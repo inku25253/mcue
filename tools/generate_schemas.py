@@ -20,6 +20,7 @@ from typing import Any, Iterable
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
+MODULE_PATH = "github.com/inku25253/mcue"
 DEFAULT_DATA = Path(r"C:\XboxGames\Minecraft for Windows\Content\data")
 
 
@@ -533,7 +534,7 @@ def emit_dispatch_schema(records: list[dict[str, Any]]) -> str:
     header.extend((f"package {package}", "", "import ("))
     for record in versioned:
         alias = package_version(record["version"])
-        path = f"example.com/mcue/bedrock/{record['scope']}/{record['family']}/{alias}"
+        path = f"{MODULE_PATH}/bedrock/{record['scope']}/{record['family']}/{alias}"
         header.append(f'\t{alias} "{path}"')
     header.extend((")", ""))
 
@@ -650,7 +651,7 @@ def vet_data(data: Path, catalog: dict[str, Any], ir: dict[str, Any], cue: Path,
         temp = Path(temporary)
         for index, key in enumerate(sorted(groups)):
             scope, family = key
-            package_path = f"example.com/mcue/bedrock/{scope}/{family}"
+            package_path = f"{MODULE_PATH}/bedrock/{scope}/{family}"
             entries = groups[key]
             fixture = temp / f"group-{index}.cue"
             documents = json.dumps([document for _, document in entries], ensure_ascii=False, separators=(",", ":"))

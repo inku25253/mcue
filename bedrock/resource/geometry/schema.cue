@@ -3,13 +3,13 @@
 package geometry
 
 import (
-	v1_10_0 "example.com/mcue/bedrock/resource/geometry/v1_10_0"
-	v1_12_0 "example.com/mcue/bedrock/resource/geometry/v1_12_0"
-	v1_16_0 "example.com/mcue/bedrock/resource/geometry/v1_16_0"
-	v1_21_0 "example.com/mcue/bedrock/resource/geometry/v1_21_0"
-	v1_21_120 "example.com/mcue/bedrock/resource/geometry/v1_21_120"
-	v1_26_10 "example.com/mcue/bedrock/resource/geometry/v1_26_10"
-	v1_8_0 "example.com/mcue/bedrock/resource/geometry/v1_8_0"
+	v1_10_0 "github.com/inku25253/mcue/bedrock/resource/geometry/v1_10_0"
+	v1_12_0 "github.com/inku25253/mcue/bedrock/resource/geometry/v1_12_0"
+	v1_16_0 "github.com/inku25253/mcue/bedrock/resource/geometry/v1_16_0"
+	v1_21_0 "github.com/inku25253/mcue/bedrock/resource/geometry/v1_21_0"
+	v1_21_120 "github.com/inku25253/mcue/bedrock/resource/geometry/v1_21_120"
+	v1_26_10 "github.com/inku25253/mcue/bedrock/resource/geometry/v1_26_10"
+	v1_8_0 "github.com/inku25253/mcue/bedrock/resource/geometry/v1_8_0"
 )
 #Schema: {
 	"format_version"?: _|_

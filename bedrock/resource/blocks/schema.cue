@@ -3,11 +3,11 @@
 package blocks
 
 import (
-	v1_1_0 "example.com/mcue/bedrock/resource/blocks/v1_1_0"
-	v1_21_10 "example.com/mcue/bedrock/resource/blocks/v1_21_10"
-	v1_21_20 "example.com/mcue/bedrock/resource/blocks/v1_21_20"
-	v1_21_30 "example.com/mcue/bedrock/resource/blocks/v1_21_30"
-	v1_21_40 "example.com/mcue/bedrock/resource/blocks/v1_21_40"
+	v1_1_0 "github.com/inku25253/mcue/bedrock/resource/blocks/v1_1_0"
+	v1_21_10 "github.com/inku25253/mcue/bedrock/resource/blocks/v1_21_10"
+	v1_21_20 "github.com/inku25253/mcue/bedrock/resource/blocks/v1_21_20"
+	v1_21_30 "github.com/inku25253/mcue/bedrock/resource/blocks/v1_21_30"
+	v1_21_40 "github.com/inku25253/mcue/bedrock/resource/blocks/v1_21_40"
 )
 #Schema: {
 	FormatVersion="format_version": ([1, 1, 0] | "1.21.10" | "1.21.20" | "1.21.30" | "1.21.40")

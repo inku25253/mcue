@@ -3,7 +3,7 @@
 package block_culling
 
 import (
-	v1_20_60 "example.com/mcue/bedrock/resource/block_culling/v1_20_60"
+	v1_20_60 "github.com/inku25253/mcue/bedrock/resource/block_culling/v1_20_60"
 )
 #Schema: {
 	FormatVersion="format_version": ("1.20.60")

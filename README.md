@@ -5,7 +5,7 @@ Minecraft Bedrock Add-On の作者向け JSON を、**JSON 種別 / `format_vers
 ```cue
 package myaddon
 
-import entity "example.com/mcue/bedrock/behavior/entity"
+import entity "github.com/inku25253/mcue/bedrock/behavior/entity"
 
 entity: entity.#Schema & {
 	format_version: "1.26.0"
@@ -19,11 +19,11 @@ entity: entity.#Schema & {
 代表的な import は次のとおりです。
 
 ```cue
-import entity "example.com/mcue/bedrock/behavior/entity"
-import recipe "example.com/mcue/bedrock/behavior/recipe"
-import loot "example.com/mcue/bedrock/behavior/loot_table"
-import manifest "example.com/mcue/bedrock/behavior/manifest"
-import render "example.com/mcue/bedrock/resource/render_controller"
+import entity "github.com/inku25253/mcue/bedrock/behavior/entity"
+import recipe "github.com/inku25253/mcue/bedrock/behavior/recipe"
+import loot "github.com/inku25253/mcue/bedrock/behavior/loot_table"
+import manifest "github.com/inku25253/mcue/bedrock/behavior/manifest"
+import render "github.com/inku25253/mcue/bedrock/resource/render_controller"
 ```
 
 Behavior Pack は `bedrock/behavior`、Resource Pack は `bedrock/resource` 以下へ分離されます。各種別の `#Schema` は JSON 内の `format_version` を判定し、対応する版のデータ契約を参照します。`format_version` のない loot table、trading、sound、texture index、UI なども各 scope 内の種別単位パッケージです。既知フィールドの型、必須 wrapper、format literal、recipe root の相互排他を検証し、将来のフィールドとカスタム component は許容します。

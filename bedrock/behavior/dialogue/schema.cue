@@ -3,7 +3,7 @@
 package dialogue
 
 import (
-	v1_17 "example.com/mcue/bedrock/behavior/dialogue/v1_17"
+	v1_17 "github.com/inku25253/mcue/bedrock/behavior/dialogue/v1_17"
 )
 #Schema: {
 	FormatVersion="format_version": ("1.17")

@@ -3,8 +3,8 @@
 package fog
 
 import (
-	v1_16_100 "example.com/mcue/bedrock/resource/fog/v1_16_100"
-	v1_21_90 "example.com/mcue/bedrock/resource/fog/v1_21_90"
+	v1_16_100 "github.com/inku25253/mcue/bedrock/resource/fog/v1_16_100"
+	v1_21_90 "github.com/inku25253/mcue/bedrock/resource/fog/v1_21_90"
 )
 #Schema: {
 	FormatVersion="format_version": ("1.16.100" | "1.21.90")

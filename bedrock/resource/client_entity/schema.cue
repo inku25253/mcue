@@ -3,9 +3,9 @@
 package client_entity
 
 import (
-	v1_10_0 "example.com/mcue/bedrock/resource/client_entity/v1_10_0"
-	v1_26_0 "example.com/mcue/bedrock/resource/client_entity/v1_26_0"
-	v1_8_0 "example.com/mcue/bedrock/resource/client_entity/v1_8_0"
+	v1_10_0 "github.com/inku25253/mcue/bedrock/resource/client_entity/v1_10_0"
+	v1_26_0 "github.com/inku25253/mcue/bedrock/resource/client_entity/v1_26_0"
+	v1_8_0 "github.com/inku25253/mcue/bedrock/resource/client_entity/v1_8_0"
 )
 #Schema: {
 	FormatVersion="format_version": ("1.10.0" | "1.26.0" | "1.8.0")

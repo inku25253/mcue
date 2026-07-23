@@ -3,7 +3,7 @@
 package animation_controller
 
 import (
-	v1_10_0 "example.com/mcue/bedrock/behavior/animation_controller/v1_10_0"
+	v1_10_0 "github.com/inku25253/mcue/bedrock/behavior/animation_controller/v1_10_0"
 )
 #Schema: {
 	FormatVersion="format_version": ("1.10.0")

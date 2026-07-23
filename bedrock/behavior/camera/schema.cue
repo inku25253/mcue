@@ -3,10 +3,10 @@
 package camera
 
 import (
-	v1_19_50 "example.com/mcue/bedrock/behavior/camera/v1_19_50"
-	v1_21_0 "example.com/mcue/bedrock/behavior/camera/v1_21_0"
-	v1_21_80 "example.com/mcue/bedrock/behavior/camera/v1_21_80"
-	v1_21_90 "example.com/mcue/bedrock/behavior/camera/v1_21_90"
+	v1_19_50 "github.com/inku25253/mcue/bedrock/behavior/camera/v1_19_50"
+	v1_21_0 "github.com/inku25253/mcue/bedrock/behavior/camera/v1_21_0"
+	v1_21_80 "github.com/inku25253/mcue/bedrock/behavior/camera/v1_21_80"
+	v1_21_90 "github.com/inku25253/mcue/bedrock/behavior/camera/v1_21_90"
 )
 #Schema: {
 	FormatVersion="format_version": ("1.19.50" | "1.21.0" | "1.21.80" | "1.21.90")

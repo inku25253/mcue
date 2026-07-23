@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import copy
 import json
+import os
+import shutil
 import subprocess
 import tempfile
 import unittest
@@ -143,7 +145,12 @@ class GeneratorTests(unittest.TestCase):
 
 
 class CueContractTests(unittest.TestCase):
-    cue = ROOT / "cue" / "cue.exe"
+    cue = Path(
+        os.environ.get("CUE")
+        or shutil.which("cue")
+        or shutil.which("cue.exe")
+        or ROOT / "cue" / "cue.exe"
+    )
 
     def vet(self, source: str, valid: bool) -> None:
         with tempfile.TemporaryDirectory(prefix="cue-test-", dir=ROOT) as directory:
@@ -157,7 +164,7 @@ class CueContractTests(unittest.TestCase):
 
     def test_entity_events_null_and_unknown_component(self) -> None:
         self.vet('''package fixture
-import s "example.com/mcue/bedrock/behavior/entity"
+import s "github.com/inku25253/mcue/bedrock/behavior/entity"
 x: s.#Schema & {format_version: "1.26.0", "minecraft:entity": {description: {identifier: "test:entity"}, events: null, components: {"test:custom": {x: true}}}}
 ''', True)
 
@@ -169,7 +176,7 @@ x: s.#Schema & {format_version: "1.26.0", "minecraft:entity": {description: {ide
             self.assertIn("[string]: (bool | number | string)", block.split("}", 1)[0])
 
         base = '''package fixture
-import s "example.com/mcue/bedrock/behavior/entity"
+import s "github.com/inku25253/mcue/bedrock/behavior/entity"
 x: s.#Schema & {format_version: "1.26.0", "minecraft:entity": {description: {identifier: "test:entity"}, events: {"test:event": %s}}}
 '''
         self.vet(base % '{set_property: {"test:flag": true, "test:count": 2, "test:expression": "query.variant"}}', True)
@@ -189,7 +196,7 @@ x: s.#Schema & {format_version: "1.26.0", "minecraft:entity": {description: {ide
         self.assertIn("[string]: ({", properties)
         self.assertNotIn('"minecraft:', properties)
         valid = '''package fixture
-import s "example.com/mcue/bedrock/behavior/entity"
+import s "github.com/inku25253/mcue/bedrock/behavior/entity"
 x: s.#Schema & {format_version: "1.26.0", "minecraft:entity": {description: {identifier: "test:entity", properties: {"test:value": %s}}}}
 '''
         self.vet(valid % '{type: "bool", default: false}', True)
@@ -203,7 +210,7 @@ x: s.#Schema & {format_version: "1.26.0", "minecraft:entity": {description: {ide
 
     def test_spawn_herd_object_and_array(self) -> None:
         base = '''package fixture
-import s "example.com/mcue/bedrock/behavior/spawn_rule"
+import s "github.com/inku25253/mcue/bedrock/behavior/spawn_rule"
 x: s.#Schema & {format_version: "1.17.0", "minecraft:spawn_rules": {description: {identifier: "test:entity"}, conditions: [{"minecraft:herd": %s}]}}
 '''
         self.vet(base % '{min_size: 1, max_size: 2}', True)
@@ -211,7 +218,7 @@ x: s.#Schema & {format_version: "1.17.0", "minecraft:spawn_rules": {description:
 
     def test_material_reduction_legacy_and_modern_input(self) -> None:
         base = '''package fixture
-import s "example.com/mcue/bedrock/behavior/recipe"
+import s "github.com/inku25253/mcue/bedrock/behavior/recipe"
 x: s.#Schema & {format_version: "1.20.10", "minecraft:recipe_material_reduction": {description: {identifier: "test:r"}, input: %s}}
 '''
         self.vet(base % '"minecraft:iron_block"', True)
@@ -219,7 +226,7 @@ x: s.#Schema & {format_version: "1.20.10", "minecraft:recipe_material_reduction"
 
     def test_render_controller_part_visibility_forms(self) -> None:
         base = '''package fixture
-import s "example.com/mcue/bedrock/resource/render_controller"
+import s "github.com/inku25253/mcue/bedrock/resource/render_controller"
 x: s.#Schema & {format_version: "1.8.0", render_controllers: {"controller.render.test": {part_visibility: %s}}}
 '''
         self.vet(base % '{body: "query.is_visible"}', True)
@@ -227,7 +234,7 @@ x: s.#Schema & {format_version: "1.8.0", render_controllers: {"controller.render
 
     def test_manifest_dependency_versions(self) -> None:
         base = '''package fixture
-import s "example.com/mcue/bedrock/behavior/manifest"
+import s "github.com/inku25253/mcue/bedrock/behavior/manifest"
 x: s.#Schema & {format_version: 2, header: {name: "n", description: "d", uuid: "u", version: [1,0,0]}, modules: [{type: "data", uuid: "m", version: [1,0,0]}], dependencies: [{uuid: "d", version: %s}]}
 '''
         self.vet(base % '[1,0,0]', True)
@@ -235,7 +242,7 @@ x: s.#Schema & {format_version: 2, header: {name: "n", description: "d", uuid: "
 
     def test_geometry_dispatches_legacy_and_versioned_shapes(self) -> None:
         base = '''package fixture
-import s "example.com/mcue/bedrock/resource/geometry"
+import s "github.com/inku25253/mcue/bedrock/resource/geometry"
 x: s.#Schema & %s
 '''
         self.vet(base % '{"geometry.custom": {}}', True)
@@ -244,7 +251,7 @@ x: s.#Schema & %s
 
     def test_feature_requires_its_official_contract(self) -> None:
         base = '''package fixture
-import s "example.com/mcue/bedrock/behavior/feature"
+import s "github.com/inku25253/mcue/bedrock/behavior/feature"
 x: s.#Schema & %s
 '''
         aggregate = '{format_version: "1.13.0", "minecraft:aggregate_feature": %s}'
@@ -264,26 +271,26 @@ x: s.#Schema & %s
 
     def test_block_components_are_typed_and_open(self) -> None:
         base = '''package fixture
-import s "example.com/mcue/bedrock/behavior/block"
+import s "github.com/inku25253/mcue/bedrock/behavior/block"
 x: s.#Schema & {format_version: "1.26.0", "minecraft:block": {description: {identifier: "test:block"}, components: {"minecraft:destroy_time": %s, "test:custom": {future: true}}}}
 '''
         self.vet(base % '2.5', True)
         self.vet(base % '"slow"', False)
         material = '''package fixture
-import s "example.com/mcue/bedrock/behavior/block"
+import s "github.com/inku25253/mcue/bedrock/behavior/block"
 x: s.#Schema & {format_version: "1.26.0", "minecraft:block": {description: {identifier: "test:block"}, components: {"minecraft:material_instances": {custom_face: {texture: 42}}}}}
 '''
         self.vet(material, False)
 
     def test_negative_contracts(self) -> None:
         recipe = '''package fixture
-import s "example.com/mcue/bedrock/behavior/recipe"
+import s "github.com/inku25253/mcue/bedrock/behavior/recipe"
 x: s.#Schema & %s
 '''
         self.vet(recipe % '{format_version: "1.20.10"}', False)
         self.vet(recipe % '{format_version: "1.20.10", "minecraft:recipe_furnace": {description: {identifier: "x:r"}}, "minecraft:recipe_shapeless": {description: {identifier: "x:s"}}}', False)
         entity = '''package fixture
-import s "example.com/mcue/bedrock/behavior/entity"
+import s "github.com/inku25253/mcue/bedrock/behavior/entity"
 x: s.#Schema & %s
 '''
         self.vet(entity % '{format_version: "9.9.9", "minecraft:entity": {description: {identifier: "x:e"}}}', False)

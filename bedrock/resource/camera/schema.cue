@@ -3,7 +3,7 @@
 package camera
 
 import (
-	v1_26_10 "example.com/mcue/bedrock/resource/camera/v1_26_10"
+	v1_26_10 "github.com/inku25253/mcue/bedrock/resource/camera/v1_26_10"
 )
 #Schema: {
 	FormatVersion="format_version": ("1.26.10")

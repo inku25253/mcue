@@ -3,8 +3,8 @@
 package aim_assist
 
 import (
-	v1_21_120 "example.com/mcue/bedrock/behavior/aim_assist/v1_21_120"
-	v1_21_50 "example.com/mcue/bedrock/behavior/aim_assist/v1_21_50"
+	v1_21_120 "github.com/inku25253/mcue/bedrock/behavior/aim_assist/v1_21_120"
+	v1_21_50 "github.com/inku25253/mcue/bedrock/behavior/aim_assist/v1_21_50"
 )
 #Schema: {
 	FormatVersion="format_version": ("1.21.120" | "1.21.50")

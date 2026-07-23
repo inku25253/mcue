@@ -3,8 +3,8 @@
 package manifest
 
 import (
-	v1 "example.com/mcue/bedrock/resource/manifest/v1"
-	v2 "example.com/mcue/bedrock/resource/manifest/v2"
+	v1 "github.com/inku25253/mcue/bedrock/resource/manifest/v1"
+	v2 "github.com/inku25253/mcue/bedrock/resource/manifest/v2"
 )
 #Schema: {
 	FormatVersion="format_version": (1 | 2)

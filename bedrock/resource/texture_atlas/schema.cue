@@ -3,7 +3,7 @@
 package texture_atlas
 
 import (
-	v1_21_30 "example.com/mcue/bedrock/resource/texture_atlas/v1_21_30"
+	v1_21_30 "github.com/inku25253/mcue/bedrock/resource/texture_atlas/v1_21_30"
 )
 #Schema: ([...({
 		"atlas_index"?: int

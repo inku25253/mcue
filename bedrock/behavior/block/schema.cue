@@ -3,7 +3,7 @@
 package block
 
 import (
-	v1_26_0 "example.com/mcue/bedrock/behavior/block/v1_26_0"
+	v1_26_0 "github.com/inku25253/mcue/bedrock/behavior/block/v1_26_0"
 )
 #Schema: {
 	FormatVersion="format_version": ("1.26.0")

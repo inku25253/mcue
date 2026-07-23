@@ -3,9 +3,9 @@
 package spawn_rule
 
 import (
-	v1_11_0 "example.com/mcue/bedrock/behavior/spawn_rule/v1_11_0"
-	v1_17_0 "example.com/mcue/bedrock/behavior/spawn_rule/v1_17_0"
-	v1_8_0 "example.com/mcue/bedrock/behavior/spawn_rule/v1_8_0"
+	v1_11_0 "github.com/inku25253/mcue/bedrock/behavior/spawn_rule/v1_11_0"
+	v1_17_0 "github.com/inku25253/mcue/bedrock/behavior/spawn_rule/v1_17_0"
+	v1_8_0 "github.com/inku25253/mcue/bedrock/behavior/spawn_rule/v1_8_0"
 )
 #Schema: {
 	FormatVersion="format_version": ("1.11.0" | "1.17.0" | "1.8.0")

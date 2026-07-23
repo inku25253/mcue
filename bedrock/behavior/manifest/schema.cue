@@ -3,7 +3,7 @@
 package manifest
 
 import (
-	v2 "example.com/mcue/bedrock/behavior/manifest/v2"
+	v2 "github.com/inku25253/mcue/bedrock/behavior/manifest/v2"
 )
 #Schema: {
 	FormatVersion="format_version": (2)
