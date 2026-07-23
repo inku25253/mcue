@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cue-lang/setup-cue@v1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m unittest discover -s tests -v
+      - run: python tools/generate_schemas.py check
+      - run: cue vet ./bedrock/... ./example/...
+      - name: Vet installed Bedrock data when available
+        shell: pwsh
+        run: |
+          if (Test-Path 'C:\XboxGames\Minecraft for Windows\Content\data') {
+            python tools/generate_schemas.py vet-data --cue (Get-Command cue).Source
+            python tools/generate_schemas.py collect --ir schema_ir.recollected.json
+            if ((Get-FileHash schema_ir.json).Hash -ne (Get-FileHash schema_ir.recollected.json).Hash) { throw 'Recollected schema IR differs' }
+          }

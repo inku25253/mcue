@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+
+# Build artifacts
+/dist/
+
+# Local CUE tooling and test workspaces
+/cue/
+/cue-test-*/
+
+# Temporary schema verification output
+/schema_ir.recollected.json
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

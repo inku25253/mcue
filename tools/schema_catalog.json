@@ -1,0 +1,54 @@
+{
+  "sources": {
+    "pack_contents": "https://learn.microsoft.com/en-us/minecraft/creator/documents/comprehensivepackcontents?view=minecraft-bedrock-stable",
+    "versioning": "https://learn.microsoft.com/en-us/minecraft/creator/reference/content/versiondisambiguation?view=minecraft-bedrock-stable",
+    "samples": "https://github.com/Mojang/bedrock-samples"
+  },
+  "families": [
+    {"scope":"behavior","family":"manifest","paths":["manifest.json"],"format":"required","root":"document","stable":true,"docs":"pack_contents"},
+    {"scope":"behavior","family":"entity","paths":["entities/*.json","entities/**/*.json"],"format":"required","root":"minecraft:entity","stable":true,"docs":"https://learn.microsoft.com/en-us/minecraft/creator/reference/content/entityreference/"},
+    {"scope":"behavior","family":"block","paths":["blocks/*.json","blocks/**/*.json"],"format":"required","root":"minecraft:block","stable":true,"docs":"https://learn.microsoft.com/en-us/minecraft/creator/reference/content/blockreference/"},
+    {"scope":"behavior","family":"item","paths":["items/*.json","items/**/*.json"],"format":"required","root":"minecraft:item","stable":true,"docs":"https://learn.microsoft.com/en-us/minecraft/creator/reference/content/itemreference/"},
+    {"scope":"behavior","family":"recipe","paths":["recipes/*.json","recipes/**/*.json"],"format":"required","root_prefix":"minecraft:recipe_","exclusive_root":true,"stable":true,"docs":"https://learn.microsoft.com/en-us/minecraft/creator/reference/content/recipereference/examples/recipelist"},
+    {"scope":"behavior","family":"loot_table","paths":["loot_tables/*.json","loot_tables/**/*.json"],"format":"none","root":"document","stable":true,"docs":"pack_contents"},
+    {"scope":"behavior","family":"trading","paths":["trading/*.json","trading/**/*.json","economy_trades/*.json","economy_trades/**/*.json"],"format":"none","root":"document","stable":true,"docs":"pack_contents"},
+    {"scope":"behavior","family":"spawn_rule","paths":["spawn_rules/*.json","spawn_rules/**/*.json"],"format":"required","root":"minecraft:spawn_rules","stable":true,"docs":"https://learn.microsoft.com/en-us/minecraft/creator/reference/content/entityreference/examples/spawnrules/"},
+    {"scope":"behavior","family":"dialogue","paths":["dialogue/*.json","dialogue/**/*.json"],"format":"required","root":"minecraft:npc_dialogue","stable":true,"docs":"https://learn.microsoft.com/en-us/minecraft/creator/documents/npcdialogue"},
+    {"scope":"behavior","family":"animation","paths":["animations/*.json","animations/**/*.json"],"format":"required","root":"animations","stable":true,"docs":"pack_contents"},
+    {"scope":"behavior","family":"animation_controller","paths":["animation_controllers/*.json","animation_controllers/**/*.json"],"format":"required","root":"animation_controllers","stable":true,"docs":"pack_contents"},
+    {"scope":"behavior","family":"feature","paths":["features/*.json","features/**/*.json"],"format":"required","root_prefix":"minecraft:","exclusive_root":true,"excluded_roots":{"minecraft:sculk_patch_feature":"internal feature type unsupported in custom content"},"stable":true,"docs":"pack_contents"},
+    {"scope":"behavior","family":"feature_rule","paths":["feature_rules/*.json","feature_rules/**/*.json"],"format":"required","root":"minecraft:feature_rules","stable":true,"docs":"pack_contents"},
+    {"scope":"behavior","family":"camera","paths":["cameras/*.json","cameras/**/*.json"],"format":"required","root_prefix":"minecraft:","exclusive_root":true,"stable":false,"docs":"pack_contents"},
+    {"scope":"behavior","family":"aim_assist","paths":["aim_assist/*.json","aim_assist/**/*.json"],"format":"optional","root":"document","stable":false,"docs":"pack_contents"},
+    {"scope":"behavior","family":"voxel_shape","paths":["shapes/*.json","shapes/**/*.json"],"format":"optional","root":"document","stable":false,"docs":"pack_contents"},
+    {"scope":"behavior","family":"item_catalog","paths":["item_catalog/*.json","item_catalog/**/*.json"],"format":"optional","root":"document","stable":false,"docs":"pack_contents"},
+    {"scope":"behavior","family":"tick","paths":["tick.json"],"format":"none","root":"document","stable":true,"docs":"pack_contents"},
+    {"scope":"behavior","family":"languages","paths":["texts/languages.json"],"format":"none","root":"document","stable":true,"docs":"pack_contents"},
+
+    {"scope":"resource","family":"manifest","paths":["manifest.json"],"format":"required","root":"document","stable":true,"docs":"pack_contents"},
+    {"scope":"resource","family":"client_entity","paths":["entity/*.json","entity/**/*.json"],"format":"required","root":"minecraft:client_entity","stable":true,"docs":"pack_contents"},
+    {"scope":"resource","family":"client_item","paths":["items/*.json","items/**/*.json"],"format":"required","root":"minecraft:item","stable":true,"docs":"pack_contents"},
+    {"scope":"resource","family":"client_biome","paths":["biomes/*.json","biomes/**/*.json"],"format":"required","root":"minecraft:client_biome","stable":true,"docs":"pack_contents"},
+    {"scope":"resource","family":"attachable","paths":["attachables/*.json","attachables/**/*.json"],"format":"required","root":"minecraft:attachable","stable":true,"docs":"pack_contents"},
+    {"scope":"resource","family":"geometry","paths":["models/*.json","models/**/*.json"],"format":"optional","root":"document","stable":true,"docs":"pack_contents"},
+    {"scope":"resource","family":"animation","paths":["animations/*.json","animations/**/*.json"],"format":"required","root":"animations","stable":true,"docs":"pack_contents"},
+    {"scope":"resource","family":"animation_controller","paths":["animation_controllers/*.json","animation_controllers/**/*.json"],"format":"required","root":"animation_controllers","stable":true,"docs":"pack_contents"},
+    {"scope":"resource","family":"render_controller","paths":["render_controllers/*.json","render_controllers/**/*.json"],"format":"required","root":"render_controllers","stable":true,"docs":"pack_contents"},
+    {"scope":"resource","family":"particle","paths":["particles/*.json","particles/**/*.json"],"format":"required","root":"particle_effect","stable":true,"docs":"pack_contents"},
+    {"scope":"resource","family":"fog","paths":["fogs/*.json","fogs/**/*.json"],"format":"required","root":"minecraft:fog_settings","stable":true,"docs":"pack_contents"},
+    {"scope":"resource","family":"camera","paths":["cameras/*.json","cameras/**/*.json"],"format":"required","root_prefix":"minecraft:","exclusive_root":true,"stable":false,"docs":"pack_contents"},
+    {"scope":"resource","family":"block_culling","paths":["block_culling/*.json","block_culling/**/*.json"],"format":"required","root":"minecraft:block_culling_rules","stable":true,"docs":"pack_contents"},
+    {"scope":"resource","family":"blocks","paths":["blocks.json"],"format":"optional","root":"document","stable":true,"docs":"pack_contents"},
+    {"scope":"resource","family":"sound_definitions","paths":["sounds/sound_definitions.json","sound_definitions.json"],"format":"none","root":"document","stable":true,"docs":"pack_contents"},
+    {"scope":"resource","family":"sounds","paths":["sounds.json"],"format":"optional","root":"document","stable":true,"docs":"pack_contents"},
+    {"scope":"resource","family":"texture_atlas","paths":["textures/terrain_texture.json","textures/item_texture.json","textures/flipbook_textures.json","textures/*texture_set.json","textures/**/*texture_set.json"],"format":"optional","root":"document","stable":true,"docs":"pack_contents"},
+    {"scope":"resource","family":"ui","paths":["ui/*.json","ui/**/*.json"],"format":"optional","root":"document","stable":true,"docs":"pack_contents"},
+    {"scope":"resource","family":"languages","paths":["texts/languages.json"],"format":"none","root":"document","stable":true,"docs":"pack_contents"},
+    {"scope":"resource","family":"renderer","paths":["renderer/*.json","renderer/**/*.json"],"format":"optional","root":"document","stable":false,"docs":"pack_contents"}
+  ],
+  "excluded_packs": {
+    "behavior": {"editor":"Editor-only pack","server_editor_library":"Editor-only pack","server_library":"platform library","server_ui_library":"platform UI library"},
+    "resource": {"editor":"Editor-only pack","persona":"Persona/internal format","platform_gdk_pc":"platform-specific internal pack","oreui":"platform UI implementation"}
+  },
+  "fallback_exclusion": "JSON path is not listed as an author-facing pack format in the catalog"
+}

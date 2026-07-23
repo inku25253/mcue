@@ -1,0 +1,106 @@
+{
+  "sources": {
+    "blocks": "https://learn.microsoft.com/en-us/minecraft/creator/reference/content/blockreference/",
+    "dialogue": "https://learn.microsoft.com/en-us/minecraft/creator/documents/npcdialogue",
+    "features": "https://learn.microsoft.com/en-us/minecraft/creator/reference/content/featuresreference/examples/featurelist",
+    "pack_contents": "https://learn.microsoft.com/en-us/minecraft/creator/documents/comprehensivepackcontents?view=minecraft-bedrock-stable"
+  },
+  "schemas": [
+    {
+      "scope": "behavior", "family": "animation", "version": "1.10.0", "format_value": "1.10.0", "root": "animations", "stable": true, "docs": "pack_contents",
+      "document": {
+        "format_version": "1.10.0",
+        "animations": {
+          "animation.example": {
+            "loop": true,
+            "animation_length": 1.0,
+            "bones": {"body": {"rotation": [0, 0, 0], "position": [0, 0, 0], "scale": [1, 1, 1]}}
+          }
+        }
+      }
+    },
+    {
+      "scope": "behavior", "family": "animation_controller", "version": "1.10.0", "format_value": "1.10.0", "root": "animation_controllers", "stable": true, "docs": "pack_contents",
+      "document": {
+        "format_version": "1.10.0",
+        "animation_controllers": {
+          "controller.animation.example": {
+            "initial_state": "default",
+            "states": {
+              "default": {
+                "animations": ["animation.example"],
+                "transitions": [{"next": "1.0"}],
+                "on_entry": ["@s example:event"],
+                "on_exit": ["@s example:event"],
+                "blend_transition": 0.2
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "scope": "behavior", "family": "block", "version": "1.26.0", "format_value": "1.26.0", "root": "minecraft:block", "stable": true, "docs": "blocks",
+      "document": {
+        "format_version": "1.26.0",
+        "minecraft:block": {
+          "description": {"identifier": "example:block", "menu_category": {"category": "construction", "group": "itemGroup.name.concrete"}},
+          "components": {
+            "minecraft:collision_box": {"origin": [-8, 0, -8], "size": [16, 16, 16]},
+            "minecraft:selection_box": {"origin": [-8, 0, -8], "size": [16, 16, 16]},
+            "minecraft:destroy_time": 1.0,
+            "minecraft:display_name": "tile.example:block.name",
+            "minecraft:explosion_resistance": 1.0,
+            "minecraft:flammable": {"flame_odds": 5, "burn_odds": 5},
+            "minecraft:friction": 0.4,
+            "minecraft:geometry": {"identifier": "geometry.example", "bone_visibility": {"root": true}},
+            "minecraft:light_dampening": 15,
+            "minecraft:light_emission": 0,
+            "minecraft:loot": "loot_tables/blocks/example.json",
+            "minecraft:map_color": "#ffffff",
+            "minecraft:material_instances": {"*": {"texture": "example", "render_method": "opaque", "face_dimming": true, "ambient_occlusion": true}},
+            "minecraft:transformation": {"translation": [0, 0, 0], "rotation": [0, 0, 0], "scale": [1, 1, 1]},
+            "minecraft:unit_cube": {}
+          },
+          "permutations": [{"condition": "query.block_state('example:state') == 1", "components": {"minecraft:light_emission": 1}}]
+        }
+      }
+    },
+    {
+      "scope": "behavior", "family": "dialogue", "version": "1.17", "format_value": "1.17", "root": "minecraft:npc_dialogue", "stable": true, "docs": "dialogue",
+      "document": {"format_version": "1.17", "minecraft:npc_dialogue": {"scenes": [{"scene_tag": "example", "npc_name": "NPC", "text": "Hello", "on_open_commands": ["/say open"], "on_close_commands": ["/say close"], "buttons": [{"name": "OK", "commands": ["/say ok"]}]}]}}
+    },
+    {
+      "scope": "behavior", "family": "feature", "version": "1.13.0", "format_value": "1.13.0", "root": "minecraft:sequence_feature", "exclusive_root": true, "stable": true, "docs": "features",
+      "document": {"format_version": "1.13.0", "minecraft:sequence_feature": {"description": {"identifier": "example:sequence_feature"}, "features": ["example:first_feature", "example:second_feature"]}}
+    },
+    {
+      "scope": "behavior", "family": "feature", "version": "1.16.100", "format_value": "1.16.100", "root": "minecraft:nether_cave_carver_feature", "exclusive_root": true, "stable": true, "docs": "features",
+      "document": {"format_version": "1.16.100", "minecraft:nether_cave_carver_feature": {"description": {"identifier": "example:nether_cave_carver_feature"}, "fill_with": "minecraft:air", "width_modifier": 0.0, "skip_carve_chance": 5, "height_limit": 120, "y_scale": [0.5, 0.5], "horizontal_radius_multiplier": [1.0, 1.0], "vertical_radius_multiplier": [1.0, 1.0], "floor_level": [-0.7, -0.7]}}
+    },
+    {
+      "scope": "behavior", "family": "feature", "version": "1.16.100", "format_value": "1.16.100", "root": "minecraft:underwater_cave_carver_feature", "exclusive_root": true, "stable": true, "docs": "features",
+      "document": {"format_version": "1.16.100", "minecraft:underwater_cave_carver_feature": {"description": {"identifier": "example:underwater_cave_carver_feature"}, "fill_with": "minecraft:water", "replace_air_with": "minecraft:water", "width_modifier": 0.0, "skip_carve_chance": 15, "height_limit": 120, "y_scale": [0.5, 0.5], "horizontal_radius_multiplier": [1.0, 1.0], "vertical_radius_multiplier": [1.0, 1.0], "floor_level": [-0.7, -0.7]}}
+    },
+    {
+      "scope": "behavior", "family": "feature", "version": "1.26.30", "format_value": "1.26.30", "root": "minecraft:height_difference_filter_feature", "exclusive_root": true, "stable": true, "docs": "features",
+      "document": {"format_version": "1.26.30", "minecraft:height_difference_filter_feature": {"description": {"identifier": "example:height_difference_filter_feature"}, "places_feature": "example:placed_feature", "min_required_downward_height_diff": 5, "min_required_upward_height_diff": 5, "max_allowed_downward_height_diff": 20, "max_allowed_upward_height_diff": 20, "search_radius": 5}}
+    },
+    {
+      "scope": "behavior", "family": "feature", "version": "1.26.30", "format_value": "1.26.30", "root": "minecraft:horizontal_tree_decoration_feature", "exclusive_root": true, "stable": true, "docs": "features",
+      "document": {"format_version": "1.26.30", "minecraft:horizontal_tree_decoration_feature": {"description": {"identifier": "example:horizontal_tree_decoration_feature"}, "allow_adjacent": false, "bark_side_only": true}}
+    },
+    {
+      "scope": "behavior", "family": "tick", "version": null, "format_value": null, "root": "document", "stable": true, "docs": "pack_contents",
+      "document": {"values": ["example/tick"]}
+    },
+    {
+      "scope": "resource", "family": "block_culling", "version": "1.20.60", "format_value": "1.20.60", "root": "minecraft:block_culling_rules", "stable": true, "docs": "pack_contents",
+      "document": {"format_version": "1.20.60", "minecraft:block_culling_rules": {"description": {"identifier": "example:culling"}, "rules": [{"direction": "north", "geometry_part": {"bone": "root", "cube": 0}}]}}
+    },
+    {
+      "scope": "resource", "family": "renderer", "version": null, "format_value": null, "root": "document", "stable": false, "docs": "pack_contents",
+      "document": {"renderer_settings": {"example_option": true}}
+    }
+  ]
+}
