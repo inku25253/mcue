@@ -10,7 +10,7 @@
     {"scope":"behavior","family":"block","paths":["blocks/*.json","blocks/**/*.json"],"format":"required","root":"minecraft:block","stable":true,"docs":"https://learn.microsoft.com/en-us/minecraft/creator/reference/content/blockreference/"},
     {"scope":"behavior","family":"item","paths":["items/*.json","items/**/*.json"],"format":"required","root":"minecraft:item","stable":true,"docs":"https://learn.microsoft.com/en-us/minecraft/creator/reference/content/itemreference/"},
     {"scope":"behavior","family":"recipe","paths":["recipes/*.json","recipes/**/*.json"],"format":"required","root_prefix":"minecraft:recipe_","exclusive_root":true,"stable":true,"docs":"https://learn.microsoft.com/en-us/minecraft/creator/reference/content/recipereference/examples/recipelist"},
-    {"scope":"behavior","family":"loot_table","paths":["loot_tables/*.json","loot_tables/**/*.json"],"format":"none","root":"document","stable":true,"docs":"pack_contents"},
+    {"scope":"behavior","family":"loot_table","paths":["loot_tables/*.json","loot_tables/**/*.json"],"format":"optional","root":"document","stable":true,"docs":"pack_contents"},
     {"scope":"behavior","family":"trading","paths":["trading/*.json","trading/**/*.json","economy_trades/*.json","economy_trades/**/*.json"],"format":"none","root":"document","stable":true,"docs":"pack_contents"},
     {"scope":"behavior","family":"spawn_rule","paths":["spawn_rules/*.json","spawn_rules/**/*.json"],"format":"required","root":"minecraft:spawn_rules","stable":true,"docs":"https://learn.microsoft.com/en-us/minecraft/creator/reference/content/entityreference/examples/spawnrules/"},
     {"scope":"behavior","family":"dialogue","paths":["dialogue/*.json","dialogue/**/*.json"],"format":"required","root":"minecraft:npc_dialogue","stable":true,"docs":"https://learn.microsoft.com/en-us/minecraft/creator/documents/npcdialogue"},
@@ -24,7 +24,6 @@
     {"scope":"behavior","family":"item_catalog","paths":["item_catalog/*.json","item_catalog/**/*.json"],"format":"optional","root":"document","stable":false,"docs":"pack_contents"},
     {"scope":"behavior","family":"tick","paths":["tick.json"],"format":"none","root":"document","stable":true,"docs":"pack_contents"},
     {"scope":"behavior","family":"languages","paths":["texts/languages.json"],"format":"none","root":"document","stable":true,"docs":"pack_contents"},
-
     {"scope":"resource","family":"manifest","paths":["manifest.json"],"format":"required","root":"document","stable":true,"docs":"pack_contents"},
     {"scope":"resource","family":"client_entity","paths":["entity/*.json","entity/**/*.json"],"format":"required","root":"minecraft:client_entity","stable":true,"docs":"pack_contents"},
     {"scope":"resource","family":"client_item","paths":["items/*.json","items/**/*.json"],"format":"required","root":"minecraft:item","stable":true,"docs":"pack_contents"},
@@ -47,8 +46,18 @@
     {"scope":"resource","family":"renderer","paths":["renderer/*.json","renderer/**/*.json"],"format":"optional","root":"document","stable":false,"docs":"pack_contents"}
   ],
   "excluded_packs": {
-    "behavior": {"editor":"Editor-only pack","server_editor_library":"Editor-only pack","server_library":"platform library","server_ui_library":"platform UI library"},
-    "resource": {"editor":"Editor-only pack","persona":"Persona/internal format","platform_gdk_pc":"platform-specific internal pack","oreui":"platform UI implementation"}
+    "behavior": {
+      "editor": "Editor-only pack",
+      "server_editor_library": "Editor-only pack",
+      "server_library": "platform library",
+      "server_ui_library": "platform UI library"
+    },
+    "resource": {
+      "editor": "Editor-only pack",
+      "persona": "Persona/internal format",
+      "platform_gdk_pc": "platform-specific internal pack",
+      "oreui": "platform UI implementation"
+    }
   },
   "fallback_exclusion": "JSON path is not listed as an author-facing pack format in the catalog"
 }

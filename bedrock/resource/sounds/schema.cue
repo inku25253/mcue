@@ -2012,6 +2012,84 @@ package sounds
 			"volume"?: number
 			...
 		}
+		"ice"?: {
+			"events"?: {
+				"break"?: {
+					"pitch"?: number
+					"sound"?: string
+					"volume"?: number
+					...
+				}
+				"default"?: string
+				"hit"?: {
+					"pitch"?: number
+					"sound"?: string
+					"volume"?: number
+					...
+				}
+				"place"?: {
+					"pitch"?: number
+					"sound"?: string
+					...
+				}
+				...
+			}
+			"pitch"?: number
+			"volume"?: number
+			...
+		}
+		"ice_crystal"?: {
+			"events"?: {
+				"break"?: {
+					"pitch"?: number
+					"sound"?: string
+					"volume"?: number
+					...
+				}
+				"default"?: string
+				"hit"?: {
+					"pitch"?: number
+					"sound"?: string
+					"volume"?: number
+					...
+				}
+				"place"?: {
+					"pitch"?: number
+					"sound"?: string
+					...
+				}
+				...
+			}
+			"pitch"?: number
+			"volume"?: number
+			...
+		}
+		"icicle"?: {
+			"events"?: {
+				"break"?: {
+					"pitch"?: number
+					"sound"?: string
+					"volume"?: number
+					...
+				}
+				"default"?: string
+				"hit"?: {
+					"pitch"?: number
+					"sound"?: string
+					"volume"?: number
+					...
+				}
+				"place"?: {
+					"pitch"?: number
+					"sound"?: string
+					...
+				}
+				...
+			}
+			"pitch"?: number
+			"volume"?: number
+			...
+		}
 		"iron"?: {
 			"events"?: {
 				"break"?: {
@@ -3280,6 +3358,32 @@ package sounds
 			"volume"?: number
 			...
 		}
+		"poplar_leaves"?: {
+			"events"?: {
+				"ambient"?: string
+				"break"?: {
+					"pitch"?: number
+					"sound"?: string
+					"volume"?: number
+					...
+				}
+				"default"?: string
+				"hit"?: {
+					"pitch"?: number
+					"sound"?: string
+					...
+				}
+				"place"?: {
+					"pitch"?: number
+					"sound"?: string
+					...
+				}
+				...
+			}
+			"pitch"?: number
+			"volume"?: number
+			...
+		}
 		"potent_sulfur"?: {
 			"events"?: {
 				"ambient"?: {
@@ -3340,6 +3444,25 @@ package sounds
 					...
 				}
 				"power.on"?: {
+					"pitch"?: number
+					"sound"?: string
+					...
+				}
+				...
+			}
+			"pitch"?: number
+			"volume"?: number
+			...
+		}
+		"red_shrub"?: {
+			"events"?: {
+				"break"?: {
+					"pitch"?: number
+					"sound"?: string
+					"volume"?: number
+					...
+				}
+				"place"?: {
 					"pitch"?: number
 					"sound"?: string
 					...
@@ -3708,6 +3831,25 @@ package sounds
 				"multi_swap"?: string
 				"place_item"?: string
 				"single_swap"?: string
+				...
+			}
+			"pitch"?: number
+			"volume"?: number
+			...
+		}
+		"shelf_mushroom"?: {
+			"events"?: {
+				"break"?: {
+					"pitch"?: number
+					"sound"?: string
+					"volume"?: number
+					...
+				}
+				"place"?: {
+					"pitch"?: number
+					"sound"?: string
+					...
+				}
 				...
 			}
 			"pitch"?: number
@@ -4139,6 +4281,37 @@ package sounds
 			"volume"?: number
 			...
 		}
+		"straw_bed"?: {
+			"events"?: {
+				"break"?: {
+					"pitch"?: number
+					"sound"?: string
+					"volume"?: number
+					...
+				}
+				"hit"?: {
+					"pitch"?: number
+					"sound"?: string
+					"volume"?: number
+					...
+				}
+				"place"?: {
+					"pitch"?: number
+					"sound"?: string
+					...
+				}
+				"straw_bed.break_leave"?: {
+					"pitch"?: number
+					"sound"?: string
+					"volume"?: number
+					...
+				}
+				...
+			}
+			"pitch"?: number
+			"volume"?: number
+			...
+		}
 		"sulfur"?: {
 			"events"?: {
 				"break"?: {
@@ -4155,6 +4328,32 @@ package sounds
 				"place"?: {
 					"pitch"?: number
 					"sound"?: string
+					...
+				}
+				...
+			}
+			"pitch"?: number
+			"volume"?: number
+			...
+		}
+		"sulfur_spike"?: {
+			"events"?: {
+				"break"?: {
+					"pitch"?: number
+					"sound"?: string
+					"volume"?: number
+					...
+				}
+				"hit"?: {
+					"pitch"?: number
+					"sound"?: string
+					"volume"?: number
+					...
+				}
+				"place"?: {
+					"pitch"?: number
+					"sound"?: string
+					"volume"?: number
 					...
 				}
 				...
@@ -5453,6 +5652,18 @@ package sounds
 				"volume"?: number
 				...
 			}
+			"cushion"?: {
+				"events"?: {
+					"death"?: string
+					"dismount"?: string
+					"mount"?: string
+					"spawn"?: string
+					...
+				}
+				"pitch"?: [...(number)]
+				"volume"?: number
+				...
+			}
 			"dolphin"?: {
 				"events"?: {
 					"ambient"?: string
@@ -5697,6 +5908,23 @@ package sounds
 				}
 				"pitch"?: [...(number)]
 				"volume"?: int
+				...
+			}
+			"frostbite"?: {
+				"events"?: {
+					"ambient"?: string
+					"death"?: string
+					"hurt"?: string
+					"step"?: {
+						"pitch"?: number
+						"sound"?: string
+						"volume"?: number
+						...
+					}
+					...
+				}
+				"pitch"?: [...(number)]
+				"volume"?: number
 				...
 			}
 			"ghast"?: {
@@ -9479,6 +9707,12 @@ package sounds
 				"volume"?: number
 				...
 			}
+			"ice_ball.break"?: {
+				"pitch"?: number
+				"sound"?: string
+				"volume"?: number
+				...
+			}
 			"icebomb.hit"?: {
 				"pitch"?: [...(number)]
 				"sound"?: string
@@ -12074,6 +12308,102 @@ package sounds
 				"volume"?: number
 				...
 			}
+			"ice"?: {
+				"events"?: {
+					"fall"?: {
+						"pitch"?: number
+						"sound"?: string
+						"volume"?: number
+						...
+					}
+					"jump"?: {
+						"pitch"?: number
+						"sound"?: string
+						"volume"?: number
+						...
+					}
+					"land"?: {
+						"pitch"?: number
+						"sound"?: string
+						"volume"?: number
+						...
+					}
+					"step"?: {
+						"pitch"?: number
+						"sound"?: string
+						"volume"?: number
+						...
+					}
+					...
+				}
+				"pitch"?: number
+				"volume"?: number
+				...
+			}
+			"ice_crystal"?: {
+				"events"?: {
+					"fall"?: {
+						"pitch"?: number
+						"sound"?: string
+						"volume"?: number
+						...
+					}
+					"jump"?: {
+						"pitch"?: number
+						"sound"?: string
+						"volume"?: number
+						...
+					}
+					"land"?: {
+						"pitch"?: number
+						"sound"?: string
+						"volume"?: number
+						...
+					}
+					"step"?: {
+						"pitch"?: number
+						"sound"?: string
+						"volume"?: number
+						...
+					}
+					...
+				}
+				"pitch"?: number
+				"volume"?: number
+				...
+			}
+			"icicle"?: {
+				"events"?: {
+					"fall"?: {
+						"pitch"?: number
+						"sound"?: string
+						"volume"?: number
+						...
+					}
+					"jump"?: {
+						"pitch"?: number
+						"sound"?: string
+						"volume"?: number
+						...
+					}
+					"land"?: {
+						"pitch"?: number
+						"sound"?: string
+						"volume"?: number
+						...
+					}
+					"step"?: {
+						"pitch"?: number
+						"sound"?: string
+						"volume"?: number
+						...
+					}
+					...
+				}
+				"pitch"?: number
+				"volume"?: number
+				...
+			}
 			"iron"?: {
 				"events"?: {
 					"default"?: string
@@ -12941,6 +13271,38 @@ package sounds
 				"volume"?: number
 				...
 			}
+			"poplar_leaves"?: {
+				"events"?: {
+					"fall"?: {
+						"pitch"?: number
+						"sound"?: string
+						"volume"?: number
+						...
+					}
+					"jump"?: {
+						"pitch"?: number
+						"sound"?: string
+						"volume"?: number
+						...
+					}
+					"land"?: {
+						"pitch"?: number
+						"sound"?: string
+						"volume"?: number
+						...
+					}
+					"step"?: {
+						"pitch"?: number
+						"sound"?: string
+						"volume"?: number
+						...
+					}
+					...
+				}
+				"pitch"?: number
+				"volume"?: number
+				...
+			}
 			"potent_sulfur"?: {
 				"events"?: {
 					"fall"?: {
@@ -13317,6 +13679,38 @@ package sounds
 				"base"?: string
 				...
 			}
+			"shelf_mushroom"?: {
+				"events"?: {
+					"fall"?: {
+						"pitch"?: number
+						"sound"?: string
+						"volume"?: number
+						...
+					}
+					"jump"?: {
+						"pitch"?: number
+						"sound"?: string
+						"volume"?: number
+						...
+					}
+					"land"?: {
+						"pitch"?: number
+						"sound"?: string
+						"volume"?: number
+						...
+					}
+					"step"?: {
+						"pitch"?: number
+						"sound"?: string
+						"volume"?: number
+						...
+					}
+					...
+				}
+				"pitch"?: number
+				"volume"?: number
+				...
+			}
 			"shroomlight"?: {
 				"events"?: {
 					"default"?: string
@@ -13616,7 +14010,77 @@ package sounds
 				"volume"?: number
 				...
 			}
+			"straw_bed"?: {
+				"events"?: {
+					"fall"?: {
+						"pitch"?: number
+						"sound"?: string
+						"volume"?: number
+						...
+					}
+					"jump"?: {
+						"pitch"?: number
+						"sound"?: string
+						"volume"?: number
+						...
+					}
+					"land"?: {
+						"pitch"?: number
+						"sound"?: string
+						"volume"?: number
+						...
+					}
+					"step"?: {
+						"pitch"?: number
+						"sound"?: string
+						"volume"?: number
+						...
+					}
+					...
+				}
+				"pitch"?: number
+				"volume"?: number
+				...
+			}
 			"sulfur"?: {
+				"events"?: {
+					"fall"?: {
+						"pitch"?: number
+						"sound"?: string
+						"volume"?: number
+						...
+					}
+					"hit"?: {
+						"pitch"?: number
+						"sound"?: string
+						"volume"?: number
+						...
+					}
+					"jump"?: {
+						"pitch"?: number
+						"sound"?: string
+						"volume"?: number
+						...
+					}
+					"land"?: {
+						"pitch"?: number
+						"sound"?: string
+						"volume"?: number
+						...
+					}
+					"step"?: {
+						"pitch"?: number
+						"sound"?: string
+						"volume"?: number
+						...
+					}
+					...
+				}
+				"pitch"?: number
+				"volume"?: number
+				...
+			}
+			"sulfur_spike"?: {
 				"events"?: {
 					"fall"?: {
 						"pitch"?: number

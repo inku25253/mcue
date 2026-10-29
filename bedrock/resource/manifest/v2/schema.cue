@@ -13,6 +13,7 @@ package v2
 		"description": string
 		"min_engine_version"?: [(int), (int), (int)]
 		"name": string
+		"pack_optimization_version"?: string
 		"pack_scope"?: string
 		"uuid": string
 		"version": [(int), (int), (int)]

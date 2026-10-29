@@ -824,6 +824,45 @@ package sound_definitions
 		"subtitle"?: string
 		...
 	}
+	"block.sulfur_spike.break"?: {
+		"category"?: string
+		"max_distance"?: number
+		"sounds"?: [...(string)]
+		"subtitle"?: string
+		...
+	}
+	"block.sulfur_spike.fall"?: {
+		"category"?: string
+		"sounds"?: [...(string)]
+		"subtitle"?: string
+		...
+	}
+	"block.sulfur_spike.hit"?: {
+		"category"?: string
+		"max_distance"?: number
+		"sounds"?: [...(string)]
+		"subtitle"?: string
+		...
+	}
+	"block.sulfur_spike.land"?: {
+		"category"?: string
+		"sounds"?: [...(string)]
+		"subtitle"?: string
+		...
+	}
+	"block.sulfur_spike.place"?: {
+		"category"?: string
+		"max_distance"?: number
+		"sounds"?: [...(string)]
+		"subtitle"?: string
+		...
+	}
+	"block.sulfur_spike.step"?: {
+		"category"?: string
+		"sounds"?: [...(string)]
+		"subtitle"?: string
+		...
+	}
 	"block.sweet_berry_bush.break"?: {
 		"category"?: string
 		"sounds"?: [...(string)]
@@ -6622,6 +6661,132 @@ package sound_definitions
 			"subtitle"?: string
 			...
 		}
+		"block.ice.break"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"block.ice.fall"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"block.ice.hit"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"block.ice.land"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"block.ice.place"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"block.ice.step"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"block.ice_crystal.break"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"block.ice_crystal.fall"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"block.ice_crystal.hit"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"block.ice_crystal.land"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"block.ice_crystal.place"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"block.ice_crystal.step"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"block.icicle.break"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"block.icicle.fall"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"block.icicle.hit"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"block.icicle.land"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"block.icicle.place"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"block.icicle.step"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
 		"block.itemframe.add_item"?: {
 			"category"?: string
 			"sounds"?: [...(string)]
@@ -6916,6 +7081,81 @@ package sound_definitions
 			"subtitle"?: string
 			...
 		}
+		"block.poplar_leaves.ambient"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...({
+					"name"?: string
+					"volume"?: number
+					"weight"?: int
+					...
+				})]
+			"subtitle"?: string
+			...
+		}
+		"block.poplar_leaves.break"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"block.poplar_leaves.fall"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"block.poplar_leaves.hit"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"block.poplar_leaves.jump"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"block.poplar_leaves.land"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"block.poplar_leaves.place"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"block.poplar_leaves.step"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"block.red_shrub.break"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"block.red_shrub.place"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
 		"block.resin.break"?: {
 			"category"?: string
 			"sounds"?: [...(string)]
@@ -7094,6 +7334,50 @@ package sound_definitions
 			"subtitle"?: string
 			...
 		}
+		"block.shelf_mushroom.break"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...({
+					"name"?: string
+					"pitch"?: number
+					"volume"?: number
+					...
+				})]
+			"subtitle"?: string
+			...
+		}
+		"block.shelf_mushroom.fall"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"block.shelf_mushroom.land"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			...
+		}
+		"block.shelf_mushroom.place"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...({
+					"name"?: string
+					"pitch"?: number
+					"volume"?: number
+					...
+				})]
+			"subtitle"?: string
+			...
+		}
+		"block.shelf_mushroom.step"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
 		"block.sign.waxed_interact_fail"?: {
 			"category"?: string
 			"max_distance"?: number
@@ -7135,6 +7419,60 @@ package sound_definitions
 					"volume"?: int
 					...
 				})]
+			...
+		}
+		"block.straw_bed.break"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"block.straw_bed.break_leave"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"block.straw_bed.fall"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"block.straw_bed.hit"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"block.straw_bed.jump"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			...
+		}
+		"block.straw_bed.land"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			...
+		}
+		"block.straw_bed.place"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"block.straw_bed.step"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
 			...
 		}
 		"block.sweet_berry_bush.break"?: {
@@ -8659,6 +8997,34 @@ package sound_definitions
 			"subtitle"?: string
 			...
 		}
+		"entity.cushion.break"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"entity.cushion.get_up"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"entity.cushion.place"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"entity.cushion.sit"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
 		"entity.fox.teleport"?: {
 			"category"?: string
 			"sounds"?: [...(({
@@ -8676,6 +9042,13 @@ package sound_definitions
 					"name"?: string
 					...
 				} | string))]
+			"subtitle"?: string
+			...
+		}
+		"entity.ice_ball.break"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
 			"subtitle"?: string
 			...
 		}
@@ -9130,6 +9503,7 @@ package sound_definitions
 			...
 		}
 		"game.player.attack.critical"?: {
+			"category"?: string
 			"sounds"?: [...({
 					"load_on_low_memory"?: bool
 					"name"?: string
@@ -12571,6 +12945,34 @@ package sound_definitions
 					"volume"?: number
 					...
 				})]
+			"subtitle"?: string
+			...
+		}
+		"mob.frostbite.ambient"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"mob.frostbite.death"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"mob.frostbite.hurt"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
+			"subtitle"?: string
+			...
+		}
+		"mob.frostbite.step"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...(string)]
 			"subtitle"?: string
 			...
 		}
@@ -16218,6 +16620,17 @@ package sound_definitions
 				})]
 			...
 		}
+		"music.overworld.frozen_peaks"?: {
+			"category"?: string
+			"sounds"?: [...({
+					"name"?: string
+					"stream"?: bool
+					"volume"?: number
+					"weight"?: int
+					...
+				})]
+			...
+		}
 		"music.overworld.grove"?: {
 			"category"?: string
 			"sounds"?: [...({
@@ -16274,6 +16687,17 @@ package sound_definitions
 				})]
 			...
 		}
+		"music.overworld.meadow"?: {
+			"category"?: string
+			"sounds"?: [...({
+					"name"?: string
+					"stream"?: bool
+					"volume"?: number
+					"weight"?: int
+					...
+				})]
+			...
+		}
 		"music.overworld.mesa"?: {
 			"category"?: string
 			"sounds"?: [...({
@@ -16305,6 +16729,16 @@ package sound_definitions
 					"stream"?: bool
 					"volume"?: number
 					"weight"?: int
+					...
+				})]
+			...
+		}
+		"music.overworld.swamp_music"?: {
+			"category"?: string
+			"sounds"?: [...({
+					"name"?: string
+					"stream"?: bool
+					"volume"?: number
 					...
 				})]
 			...
@@ -17833,6 +18267,17 @@ package sound_definitions
 			"max_distance"?: number
 			"sounds"?: [...({
 					"load_on_low_memory"?: bool
+					"name"?: string
+					"stream"?: bool
+					"volume"?: number
+					...
+				})]
+			...
+		}
+		"record.bounce"?: {
+			"category"?: string
+			"max_distance"?: number
+			"sounds"?: [...({
 					"name"?: string
 					"stream"?: bool
 					"volume"?: number

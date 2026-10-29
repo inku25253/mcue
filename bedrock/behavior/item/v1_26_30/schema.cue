@@ -6,11 +6,13 @@ package v1_26_30
 	"minecraft:item": {
 		"components"?: {
 			"minecraft:bundle_interaction"?: {
+				"num_viewable_slots"?: int
 				...
 			}
 			"minecraft:cooldown"?: {
 				"category"?: string
 				"duration"?: number
+				"type"?: string
 				...
 			}
 			"minecraft:display_name"?: {
@@ -22,10 +24,7 @@ package v1_26_30
 				"saturation_modifier"?: number
 				...
 			}
-			"minecraft:hand_equipped"?: {
-				"value"?: bool
-				...
-			}
+			"minecraft:hand_equipped"?: bool
 			"minecraft:icon"?: {
 				"textures"?: {
 					"default"?: string
@@ -33,24 +32,28 @@ package v1_26_30
 				}
 				...
 			}
-			"minecraft:max_stack_size"?: {
-				...
-			}
+			"minecraft:max_stack_size"?: int
 			"minecraft:projectile"?: {
+				"minimum_critical_power"?: number
 				"projectile_entity"?: string
 				...
 			}
 			"minecraft:storage_item"?: {
+				"allow_nested_storage_items"?: bool
+				"allowed_items"?: [...(_)]
 				"banned_items"?: [...({
 						"name"?: string
 						...
 					})]
+				"max_slots"?: int
 				...
 			}
 			"minecraft:storage_weight_limit"?: {
+				"max_weight_limit"?: int
 				...
 			}
 			"minecraft:storage_weight_modifier"?: {
+				"weight_in_storage_item"?: int
 				...
 			}
 			"minecraft:tags"?: {
@@ -60,7 +63,10 @@ package v1_26_30
 			"minecraft:throwable"?: {
 				"do_swing_animation"?: bool
 				"launch_power_scale"?: number
+				"max_draw_duration"?: number
 				"max_launch_power"?: number
+				"min_draw_duration"?: number
+				"scale_power_by_draw_duration"?: bool
 				...
 			}
 			"minecraft:use_animation"?: {

@@ -10,9 +10,11 @@ import (
 	v1_21_100 "github.com/inku25253/mcue/bedrock/behavior/item/v1_21_100"
 	v1_21_80 "github.com/inku25253/mcue/bedrock/behavior/item/v1_21_80"
 	v1_26_30 "github.com/inku25253/mcue/bedrock/behavior/item/v1_26_30"
+	v1_26_40 "github.com/inku25253/mcue/bedrock/behavior/item/v1_26_40"
+	v1_26_50 "github.com/inku25253/mcue/bedrock/behavior/item/v1_26_50"
 )
 #Schema: {
-	FormatVersion="format_version": ("1.10" | "1.14" | "1.16" | "1.16.0" | "1.21.100" | "1.21.80" | "1.26.30")
+	FormatVersion="format_version": ("1.10" | "1.14" | "1.16" | "1.16.0" | "1.21.100" | "1.21.80" | "1.26.30" | "1.26.40" | "1.26.50")
 	if FormatVersion == "1.10" {
 		v1_10.#Schema
 	}
@@ -33,5 +35,11 @@ import (
 	}
 	if FormatVersion == "1.26.30" {
 		v1_26_30.#Schema
+	}
+	if FormatVersion == "1.26.40" {
+		v1_26_40.#Schema
+	}
+	if FormatVersion == "1.26.50" {
+		v1_26_50.#Schema
 	}
 }

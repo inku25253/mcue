@@ -48,6 +48,26 @@ package v1_26_30
 		"duration"?: int
 		...
 	}
+	"minecraft:apply_knockback_rules"?: {
+		"presets"?: [...({
+				"extra_knockback_approach"?: string
+				"filter"?: {
+					"domain"?: string
+					"subject"?: string
+					"test"?: string
+					"value"?: string
+					...
+				}
+				"horizontal_power"?: number
+				"knockback_mode"?: string
+				"scale_with_damage"?: bool
+				"slowdown_scale"?: number
+				"vertical_power"?: number
+				"vertical_velocity_cap"?: number
+				...
+			})]
+		...
+	}
 	"minecraft:area_attack"?: {
 		"cause"?: string
 		"damage_cooldown"?: number
@@ -467,6 +487,9 @@ package v1_26_30
 		"within_radius"?: int
 		...
 	}
+	"minecraft:block_climber"?: {
+		...
+	}
 	"minecraft:body_rotation_always_follows_head"?: {
 		...
 	}
@@ -492,6 +515,8 @@ package v1_26_30
 		"breathes_air"?: bool
 		"breathes_lava"?: bool
 		"breathes_water"?: bool
+		"generates_bubbles"?: bool
+		"inhale_time"?: number
 		"suffocate_time"?: int
 		"total_supply"?: int
 		...
@@ -711,6 +736,12 @@ package v1_26_30
 			})] | {
 			"event"?: string
 			"filters"?: {
+				"all_of"?: [...({
+						"subject"?: string
+						"test"?: string
+						"value"?: (bool | string)
+						...
+					})]
 				"operator"?: string
 				"subject"?: string
 				"test"?: string
@@ -755,17 +786,22 @@ package v1_26_30
 			})]
 		...
 	}
+	"minecraft:exhaustion_values"?: {
+		"attack"?: number
+		"damage"?: number
+		"heal"?: number
+		"jump"?: number
+		"lunge"?: number
+		"mine"?: number
+		"sprint"?: number
+		"sprint_jump"?: number
+		"swim"?: number
+		"walk"?: number
+		...
+	}
 	"minecraft:experience_reward"?: {
-		"on_bred"?: ({
-			"expression"?: string
-			"version"?: int
-			...
-		} | string)
-		"on_death"?: ({
-			"expression"?: string
-			"version"?: int
-			...
-		} | string)
+		"on_bred"?: string
+		"on_death"?: string
 		...
 	}
 	"minecraft:explode"?: {
@@ -872,6 +908,10 @@ package v1_26_30
 				}
 				...
 			})]
+		...
+	}
+	"minecraft:insomnia"?: {
+		"days_until_insomnia"?: int
 		...
 	}
 	"minecraft:interact"?: {
@@ -1068,6 +1108,8 @@ package v1_26_30
 		...
 	}
 	"minecraft:nameable"?: {
+		"allow_name_tag_renaming"?: bool
+		"always_show"?: bool
 		...
 	}
 	"minecraft:navigation.float"?: {
@@ -1191,6 +1233,27 @@ package v1_26_30
 	}
 	"minecraft:physics"?: {
 		"has_gravity"?: bool
+		"push_towards_closest_space"?: bool
+		...
+	}
+	"minecraft:player.exhaustion"?: {
+		"max"?: int
+		"value"?: int
+		...
+	}
+	"minecraft:player.experience"?: {
+		"max"?: int
+		"value"?: int
+		...
+	}
+	"minecraft:player.level"?: {
+		"max"?: int
+		"value"?: int
+		...
+	}
+	"minecraft:player.saturation"?: {
+		"max"?: int
+		"value"?: int
 		...
 	}
 	"minecraft:pushable_by_block"?: {
@@ -1230,6 +1293,14 @@ package v1_26_30
 				"vertical_kick_multiplier"?: number
 				...
 			})]
+		...
+	}
+	"minecraft:raid_trigger"?: {
+		"triggered_event"?: {
+			"event"?: string
+			"target"?: string
+			...
+		}
 		...
 	}
 	"minecraft:rail_movement"?: {
@@ -1321,6 +1392,16 @@ package v1_26_30
 	"minecraft:spawn_egg_interaction"?: {
 		...
 	}
+	"minecraft:spell_effects"?: {
+		"add_effects"?: [...({
+				"display_on_screen_animation"?: bool
+				"duration"?: int
+				"effect"?: string
+				...
+			})]
+		"remove_effects"?: string
+		...
+	}
 	"minecraft:strength"?: {
 		"max"?: int
 		"value"?: int
@@ -1363,7 +1444,7 @@ package v1_26_30
 	}
 	"minecraft:timer"?: {
 		"looping"?: bool
-		"time"?: int
+		"time"?: (int | [...(number)])
 		"time_down_event"?: {
 			"event"?: string
 			"target"?: string

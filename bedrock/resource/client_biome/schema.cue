@@ -10,9 +10,10 @@ import (
 	v1_21_60 "github.com/inku25253/mcue/bedrock/resource/client_biome/v1_21_60"
 	v1_21_70 "github.com/inku25253/mcue/bedrock/resource/client_biome/v1_21_70"
 	v1_26_0 "github.com/inku25253/mcue/bedrock/resource/client_biome/v1_26_0"
+	v1_26_50 "github.com/inku25253/mcue/bedrock/resource/client_biome/v1_26_50"
 )
 #Schema: {
-	FormatVersion="format_version": ("1.21.100" | "1.21.110" | "1.21.120" | "1.21.40" | "1.21.60" | "1.21.70" | "1.26.0")
+	FormatVersion="format_version": ("1.21.100" | "1.21.110" | "1.21.120" | "1.21.40" | "1.21.60" | "1.21.70" | "1.26.0" | "1.26.50")
 	if FormatVersion == "1.21.100" {
 		v1_21_100.#Schema
 	}
@@ -33,5 +34,8 @@ import (
 	}
 	if FormatVersion == "1.26.0" {
 		v1_26_0.#Schema
+	}
+	if FormatVersion == "1.26.50" {
+		v1_26_50.#Schema
 	}
 }

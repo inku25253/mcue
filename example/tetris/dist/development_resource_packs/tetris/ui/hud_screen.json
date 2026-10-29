@@ -1,0 +1,72 @@
+{
+  "namespace": "hud",
+  "hud_title_text": {
+    "bindings": [
+      {
+        "binding_name": "#hud_title_text_string"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(not (('%.7s' * #hud_title_text_string) = 'tetris:'))",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+  "root_panel": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_back",
+        "value": [
+          {
+            "tetris_panel@hud.tetris_panel": {}
+          }
+        ]
+      }
+    ]
+  },
+  "tetris_panel": {
+    "alpha": 0.6,
+    "anchor_from": "right_middle",
+    "anchor_to": "right_middle",
+    "bindings": [
+      {
+        "binding_name": "#hud_title_text_string"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(('%.7s' * #hud_title_text_string) = 'tetris:')",
+        "target_property_name": "#visible"
+      }
+    ],
+    "controls": [
+      {
+        "stats": {
+          "bindings": [
+            {
+              "binding_name": "#hud_title_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(#hud_title_text_string - 'tetris:')",
+              "target_property_name": "#text"
+            }
+          ],
+          "shadow": true,
+          "text": "#text",
+          "type": "label"
+        }
+      }
+    ],
+    "offset": [
+      -24,
+      0
+    ],
+    "size": [
+      "100%c + 16px",
+      "100%c + 16px"
+    ],
+    "texture": "textures/ui/Black",
+    "type": "image"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:entity": {
+    "components": {
+      "minecraft:collision_box": {
+        "height": 0.1,
+        "width": 0.1
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": "no"
+        }
+      },
+      "minecraft:physics": {
+        "has_collision": false,
+        "has_gravity": false
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      }
+    },
+    "description": {
+      "identifier": "tetris:cell",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "properties": {
+        "tetris:color": {
+          "client_sync": true,
+          "default": 0,
+          "range": [
+            0,
+            7
+          ],
+          "type": "int"
+        }
+      }
+    }
+  }
+}

@@ -27,16 +27,106 @@ package v1_21_40
 		"textures"?: string
 		...
 	}
+	"black_concrete_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"black_concrete_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"black_concrete_stairs"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
 	"black_terracotta"?: {
 		"sound"?: string
+		...
+	}
+	"black_wool_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"black_wool_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"black_wool_stairs"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"blue_concrete_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"blue_concrete_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"blue_concrete_stairs"?: {
+		"sound"?: string
+		"textures"?: string
 		...
 	}
 	"blue_terracotta"?: {
 		"sound"?: string
 		...
 	}
+	"blue_wool_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"blue_wool_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"blue_wool_stairs"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"brown_concrete_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"brown_concrete_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"brown_concrete_stairs"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
 	"brown_terracotta"?: {
 		"sound"?: string
+		...
+	}
+	"brown_wool_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"brown_wool_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"brown_wool_stairs"?: {
+		"sound"?: string
+		"textures"?: string
 		...
 	}
 	"bush"?: {
@@ -221,8 +311,38 @@ package v1_21_40
 		}
 		...
 	}
+	"cyan_concrete_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"cyan_concrete_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"cyan_concrete_stairs"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
 	"cyan_terracotta"?: {
 		"sound"?: string
+		...
+	}
+	"cyan_wool_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"cyan_wool_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"cyan_wool_stairs"?: {
+		"sound"?: string
+		"textures"?: string
 		...
 	}
 	"dark_oak_planks"?: {
@@ -322,12 +442,72 @@ package v1_21_40
 		"textures"?: string
 		...
 	}
+	"gray_concrete_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"gray_concrete_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"gray_concrete_stairs"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
 	"gray_terracotta"?: {
 		"sound"?: string
 		...
 	}
+	"gray_wool_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"gray_wool_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"gray_wool_stairs"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"green_concrete_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"green_concrete_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"green_concrete_stairs"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
 	"green_terracotta"?: {
 		"sound"?: string
+		...
+	}
+	"green_wool_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"green_wool_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"green_wool_stairs"?: {
+		"sound"?: string
+		"textures"?: string
 		...
 	}
 	"hardened_clay"?: {
@@ -335,6 +515,21 @@ package v1_21_40
 		...
 	}
 	"heavy_weighted_pressure_plate"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"ice"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"ice_crystal"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"icicle"?: {
 		"sound"?: string
 		"textures"?: string
 		...
@@ -388,12 +583,72 @@ package v1_21_40
 		"textures"?: string
 		...
 	}
+	"light_blue_concrete_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"light_blue_concrete_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"light_blue_concrete_stairs"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
 	"light_blue_terracotta"?: {
 		"sound"?: string
 		...
 	}
+	"light_blue_wool_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"light_blue_wool_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"light_blue_wool_stairs"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"light_gray_concrete_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"light_gray_concrete_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"light_gray_concrete_stairs"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
 	"light_gray_terracotta"?: {
 		"sound"?: string
+		...
+	}
+	"light_gray_wool_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"light_gray_wool_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"light_gray_wool_stairs"?: {
+		"sound"?: string
+		"textures"?: string
 		...
 	}
 	"lightning_rod"?: {
@@ -402,12 +657,72 @@ package v1_21_40
 		"textures"?: string
 		...
 	}
+	"lime_concrete_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"lime_concrete_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"lime_concrete_stairs"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
 	"lime_terracotta"?: {
 		"sound"?: string
 		...
 	}
+	"lime_wool_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"lime_wool_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"lime_wool_stairs"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"magenta_concrete_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"magenta_concrete_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"magenta_concrete_stairs"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
 	"magenta_terracotta"?: {
 		"sound"?: string
+		...
+	}
+	"magenta_wool_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"magenta_wool_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"magenta_wool_stairs"?: {
+		"sound"?: string
+		"textures"?: string
 		...
 	}
 	"mangrove_shelf"?: {
@@ -464,8 +779,44 @@ package v1_21_40
 		"textures"?: string
 		...
 	}
+	"orange_concrete_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"orange_concrete_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"orange_concrete_stairs"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"orange_poplar_leaves"?: {
+		"ambient_occlusion_exponent"?: number
+		"sound"?: string
+		"textures"?: string
+		...
+	}
 	"orange_terracotta"?: {
 		"sound"?: string
+		...
+	}
+	"orange_wool_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"orange_wool_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"orange_wool_stairs"?: {
+		"sound"?: string
+		"textures"?: string
 		...
 	}
 	"oxidized_copper_bars"?: {
@@ -637,8 +988,38 @@ package v1_21_40
 		"textures"?: string
 		...
 	}
+	"pink_concrete_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"pink_concrete_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"pink_concrete_stairs"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
 	"pink_terracotta"?: {
 		"sound"?: string
+		...
+	}
+	"pink_wool_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"pink_wool_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"pink_wool_stairs"?: {
+		"sound"?: string
+		"textures"?: string
 		...
 	}
 	"player_head"?: {
@@ -696,13 +1077,153 @@ package v1_21_40
 		"textures"?: string
 		...
 	}
+	"poplar_button"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"poplar_door"?: {
+		"sound"?: string
+		"textures"?: {
+			"down"?: string
+			"side"?: string
+			"up"?: string
+			...
+		}
+		...
+	}
+	"poplar_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"poplar_fence"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"poplar_fence_gate"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"poplar_hanging_sign"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"poplar_log"?: {
+		"sound"?: string
+		"textures"?: {
+			"down"?: string
+			"side"?: string
+			"up"?: string
+			...
+		}
+		...
+	}
+	"poplar_planks"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"poplar_pressure_plate"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"poplar_sapling"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"poplar_shelf"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"poplar_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"poplar_stairs"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"poplar_standing_sign"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"poplar_trapdoor"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"poplar_wall_sign"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"poplar_wood"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
 	"potent_sulfur"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"purple_concrete_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"purple_concrete_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"purple_concrete_stairs"?: {
 		"sound"?: string
 		"textures"?: string
 		...
 	}
 	"purple_terracotta"?: {
 		"sound"?: string
+		...
+	}
+	"purple_wool_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"purple_wool_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"purple_wool_stairs"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"red_concrete_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"red_concrete_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"red_concrete_stairs"?: {
+		"sound"?: string
+		"textures"?: string
 		...
 	}
 	"red_nether_brick_slab"?: {
@@ -715,8 +1236,33 @@ package v1_21_40
 		"textures"?: string
 		...
 	}
+	"red_poplar_leaves"?: {
+		"ambient_occlusion_exponent"?: number
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"red_shrub"?: {
+		"sound"?: string
+		...
+	}
 	"red_terracotta"?: {
 		"sound"?: string
+		...
+	}
+	"red_wool_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"red_wool_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"red_wool_stairs"?: {
+		"sound"?: string
+		"textures"?: string
 		...
 	}
 	"resin_block"?: {
@@ -755,6 +1301,10 @@ package v1_21_40
 		"textures"?: string
 		...
 	}
+	"shelf_mushroom"?: {
+		"sound"?: string
+		...
+	}
 	"short_dry_grass"?: {
 		"sound"?: string
 		"textures"?: string
@@ -784,6 +1334,10 @@ package v1_21_40
 		"textures"?: string
 		...
 	}
+	"straw_bed"?: {
+		"sound"?: string
+		...
+	}
 	"stripped_pale_oak_log"?: {
 		"sound"?: string
 		"textures"?: {
@@ -795,6 +1349,21 @@ package v1_21_40
 		...
 	}
 	"stripped_pale_oak_wood"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"stripped_poplar_log"?: {
+		"sound"?: string
+		"textures"?: {
+			"down"?: string
+			"side"?: string
+			"up"?: string
+			...
+		}
+		...
+	}
+	"stripped_poplar_wood"?: {
 		"sound"?: string
 		"textures"?: string
 		...
@@ -1137,8 +1706,38 @@ package v1_21_40
 		"sound"?: string
 		...
 	}
+	"white_concrete_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"white_concrete_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"white_concrete_stairs"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
 	"white_terracotta"?: {
 		"sound"?: string
+		...
+	}
+	"white_wool_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"white_wool_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"white_wool_stairs"?: {
+		"sound"?: string
+		"textures"?: string
 		...
 	}
 	"wildflowers"?: {
@@ -1152,8 +1751,44 @@ package v1_21_40
 		"textures"?: string
 		...
 	}
+	"yellow_concrete_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"yellow_concrete_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"yellow_concrete_stairs"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"yellow_poplar_leaves"?: {
+		"ambient_occlusion_exponent"?: number
+		"sound"?: string
+		"textures"?: string
+		...
+	}
 	"yellow_terracotta"?: {
 		"sound"?: string
+		...
+	}
+	"yellow_wool_double_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"yellow_wool_slab"?: {
+		"sound"?: string
+		"textures"?: string
+		...
+	}
+	"yellow_wool_stairs"?: {
+		"sound"?: string
+		"textures"?: string
 		...
 	}
 	"zombie_head"?: {

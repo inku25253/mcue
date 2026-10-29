@@ -32,9 +32,11 @@ package v1_26_0
 			"scripts"?: {
 				"animate"?: [...(({
 						"admire"?: string
+						"attack_controller"?: string
 						"bow_and_arrow_controller"?: string
 						"celebrate_hunt"?: string
 						"celebrate_hunt_special"?: string
+						"frostbite_attack_controller"?: string
 						"humanoid_big_head"?: string
 						"melee_spear_controller"?: string
 						"zombie_attack_bare_hand_controller"?: string

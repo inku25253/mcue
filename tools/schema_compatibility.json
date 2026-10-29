@@ -1,0 +1,917 @@
+{
+  "schemas": [
+    {
+      "compatibility_source": "https://github.com/inku25253/mcue/blob/fb67d51/schema_ir.json",
+      "definitions": {
+        "EntityComponents": {
+          "fields": {
+            "minecraft:apply_knockback_rules": {
+              "fields": {
+                "presets": {
+                  "element": {
+                    "fields": {
+                      "extra_knockback_approach": {
+                        "kinds": [
+                          "string"
+                        ]
+                      },
+                      "filter": {
+                        "fields": {
+                          "domain": {
+                            "kinds": [
+                              "string"
+                            ]
+                          },
+                          "subject": {
+                            "kinds": [
+                              "string"
+                            ]
+                          },
+                          "test": {
+                            "kinds": [
+                              "string"
+                            ]
+                          },
+                          "value": {
+                            "kinds": [
+                              "string"
+                            ]
+                          }
+                        },
+                        "kinds": [
+                          "object"
+                        ]
+                      },
+                      "horizontal_hit_angle_scale": {
+                        "kinds": [
+                          "number"
+                        ]
+                      },
+                      "horizontal_power": {
+                        "kinds": [
+                          "number"
+                        ]
+                      },
+                      "scale_previous_velocity": {
+                        "kinds": [
+                          "number"
+                        ]
+                      },
+                      "scale_with_damage": {
+                        "kinds": [
+                          "bool"
+                        ]
+                      },
+                      "vertical_hit_angle_scale": {
+                        "kinds": [
+                          "number"
+                        ]
+                      },
+                      "vertical_position_angle_scale": {
+                        "kinds": [
+                          "number"
+                        ]
+                      },
+                      "vertical_power": {
+                        "kinds": [
+                          "number"
+                        ]
+                      },
+                      "vertical_velocity_cap": {
+                        "kinds": [
+                          "number"
+                        ]
+                      }
+                    },
+                    "kinds": [
+                      "object"
+                    ]
+                  },
+                  "kinds": [
+                    "list"
+                  ]
+                }
+              },
+              "kinds": [
+                "object"
+              ]
+            },
+            "minecraft:attack": {
+              "fields": {
+                "damage": {
+                  "kinds": [
+                    "int"
+                  ]
+                }
+              },
+              "kinds": [
+                "object"
+              ]
+            },
+            "minecraft:block_climber": {
+              "kinds": [
+                "object"
+              ]
+            },
+            "minecraft:breathable": {
+              "fields": {
+                "generates_bubbles": {
+                  "kinds": [
+                    "bool"
+                  ]
+                },
+                "inhale_time": {
+                  "kinds": [
+                    "number"
+                  ]
+                },
+                "suffocate_time": {
+                  "kinds": [
+                    "int"
+                  ]
+                },
+                "total_supply": {
+                  "kinds": [
+                    "int"
+                  ]
+                }
+              },
+              "kinds": [
+                "object"
+              ]
+            },
+            "minecraft:breedable": {
+              "fields": {
+                "love_filters": {
+                  "fields": {
+                    "value": {
+                      "kinds": [
+                        "int"
+                      ]
+                    }
+                  },
+                  "kinds": [
+                    "object"
+                  ]
+                }
+              },
+              "kinds": [
+                "object"
+              ]
+            },
+            "minecraft:can_climb": {
+              "kinds": [
+                "object"
+              ]
+            },
+            "minecraft:collision_box": {
+              "fields": {
+                "height": {
+                  "kinds": [
+                    "number"
+                  ]
+                },
+                "width": {
+                  "kinds": [
+                    "number"
+                  ]
+                }
+              },
+              "kinds": [
+                "object"
+              ]
+            },
+            "minecraft:conditional_bandwidth_optimization": {
+              "kinds": [
+                "object"
+              ]
+            },
+            "minecraft:environment_sensor": {
+              "fields": {
+                "triggers": {
+                  "fields": {
+                    "event": {
+                      "kinds": [
+                        "string"
+                      ]
+                    },
+                    "filters": {
+                      "fields": {
+                        "all_of": {
+                          "element": {
+                            "fields": {
+                              "subject": {
+                                "kinds": [
+                                  "string"
+                                ]
+                              },
+                              "test": {
+                                "kinds": [
+                                  "string"
+                                ]
+                              },
+                              "value": {
+                                "kinds": [
+                                  "bool",
+                                  "string"
+                                ]
+                              }
+                            },
+                            "kinds": [
+                              "object"
+                            ]
+                          },
+                          "kinds": [
+                            "list"
+                          ]
+                        }
+                      },
+                      "kinds": [
+                        "object"
+                      ]
+                    }
+                  },
+                  "kinds": [
+                    "object"
+                  ]
+                }
+              },
+              "kinds": [
+                "object"
+              ]
+            },
+            "minecraft:exhaustion_values": {
+              "fields": {
+                "attack": {
+                  "kinds": [
+                    "number"
+                  ]
+                },
+                "damage": {
+                  "kinds": [
+                    "number"
+                  ]
+                },
+                "heal": {
+                  "kinds": [
+                    "number"
+                  ]
+                },
+                "jump": {
+                  "kinds": [
+                    "number"
+                  ]
+                },
+                "lunge": {
+                  "kinds": [
+                    "number"
+                  ]
+                },
+                "mine": {
+                  "kinds": [
+                    "number"
+                  ]
+                },
+                "sprint": {
+                  "kinds": [
+                    "number"
+                  ]
+                },
+                "sprint_jump": {
+                  "kinds": [
+                    "number"
+                  ]
+                },
+                "swim": {
+                  "kinds": [
+                    "number"
+                  ]
+                },
+                "walk": {
+                  "kinds": [
+                    "number"
+                  ]
+                }
+              },
+              "kinds": [
+                "object"
+              ]
+            },
+            "minecraft:experience_reward": {
+              "fields": {
+                "on_death": {
+                  "fields": {
+                    "expression": {
+                      "kinds": [
+                        "string"
+                      ]
+                    },
+                    "version": {
+                      "kinds": [
+                        "int"
+                      ]
+                    }
+                  },
+                  "kinds": [
+                    "object"
+                  ]
+                }
+              },
+              "kinds": [
+                "object"
+              ]
+            },
+            "minecraft:hurt_on_condition": {
+              "fields": {
+                "damage_conditions": {
+                  "element": {
+                    "fields": {
+                      "cause": {
+                        "kinds": [
+                          "string"
+                        ]
+                      },
+                      "damage_per_tick": {
+                        "kinds": [
+                          "int"
+                        ]
+                      },
+                      "filters": {
+                        "fields": {
+                          "operator": {
+                            "kinds": [
+                              "string"
+                            ]
+                          },
+                          "subject": {
+                            "kinds": [
+                              "string"
+                            ]
+                          },
+                          "test": {
+                            "kinds": [
+                              "string"
+                            ]
+                          },
+                          "value": {
+                            "kinds": [
+                              "bool"
+                            ]
+                          }
+                        },
+                        "kinds": [
+                          "object"
+                        ]
+                      }
+                    },
+                    "kinds": [
+                      "object"
+                    ]
+                  },
+                  "kinds": [
+                    "list"
+                  ]
+                }
+              },
+              "kinds": [
+                "object"
+              ]
+            },
+            "minecraft:insomnia": {
+              "fields": {
+                "days_until_insomnia": {
+                  "kinds": [
+                    "int"
+                  ]
+                }
+              },
+              "kinds": [
+                "object"
+              ]
+            },
+            "minecraft:is_hidden_when_invisible": {
+              "kinds": [
+                "object"
+              ]
+            },
+            "minecraft:loot": {
+              "fields": {
+                "table": {
+                  "kinds": [
+                    "string"
+                  ]
+                }
+              },
+              "kinds": [
+                "object"
+              ]
+            },
+            "minecraft:movement": {
+              "fields": {
+                "value": {
+                  "kinds": [
+                    "number"
+                  ]
+                }
+              },
+              "kinds": [
+                "object"
+              ]
+            },
+            "minecraft:nameable": {
+              "fields": {
+                "allow_name_tag_renaming": {
+                  "kinds": [
+                    "bool"
+                  ]
+                },
+                "always_show": {
+                  "kinds": [
+                    "bool"
+                  ]
+                }
+              },
+              "kinds": [
+                "object"
+              ]
+            },
+            "minecraft:physics": {
+              "fields": {
+                "push_towards_closest_space": {
+                  "kinds": [
+                    "bool"
+                  ]
+                }
+              },
+              "kinds": [
+                "object"
+              ]
+            },
+            "minecraft:player.exhaustion": {
+              "fields": {
+                "max": {
+                  "kinds": [
+                    "int"
+                  ]
+                },
+                "value": {
+                  "kinds": [
+                    "int"
+                  ]
+                }
+              },
+              "kinds": [
+                "object"
+              ]
+            },
+            "minecraft:player.experience": {
+              "fields": {
+                "max": {
+                  "kinds": [
+                    "int"
+                  ]
+                },
+                "value": {
+                  "kinds": [
+                    "int"
+                  ]
+                }
+              },
+              "kinds": [
+                "object"
+              ]
+            },
+            "minecraft:player.level": {
+              "fields": {
+                "max": {
+                  "kinds": [
+                    "int"
+                  ]
+                },
+                "value": {
+                  "kinds": [
+                    "int"
+                  ]
+                }
+              },
+              "kinds": [
+                "object"
+              ]
+            },
+            "minecraft:player.saturation": {
+              "fields": {
+                "max": {
+                  "kinds": [
+                    "int"
+                  ]
+                },
+                "value": {
+                  "kinds": [
+                    "int"
+                  ]
+                }
+              },
+              "kinds": [
+                "object"
+              ]
+            },
+            "minecraft:pushable_by_block": {
+              "kinds": [
+                "object"
+              ]
+            },
+            "minecraft:raid_trigger": {
+              "fields": {
+                "triggered_event": {
+                  "fields": {
+                    "event": {
+                      "kinds": [
+                        "string"
+                      ]
+                    },
+                    "target": {
+                      "kinds": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "kinds": [
+                    "object"
+                  ]
+                }
+              },
+              "kinds": [
+                "object"
+              ]
+            },
+            "minecraft:rideable": {
+              "fields": {
+                "family_types": {
+                  "element": {
+                    "kinds": [
+                      "string"
+                    ]
+                  },
+                  "kinds": [
+                    "list"
+                  ]
+                },
+                "pull_in_entities": {
+                  "kinds": [
+                    "bool"
+                  ]
+                },
+                "seat_count": {
+                  "kinds": [
+                    "int"
+                  ]
+                },
+                "seats": {
+                  "element": {
+                    "fields": {
+                      "lock_rider_rotation": {
+                        "kinds": [
+                          "int"
+                        ]
+                      },
+                      "max_rider_count": {
+                        "kinds": [
+                          "int"
+                        ]
+                      },
+                      "min_rider_count": {
+                        "kinds": [
+                          "int"
+                        ]
+                      },
+                      "position": {
+                        "element": {
+                          "kinds": [
+                            "number"
+                          ]
+                        },
+                        "kinds": [
+                          "list"
+                        ]
+                      }
+                    },
+                    "kinds": [
+                      "object"
+                    ]
+                  },
+                  "kinds": [
+                    "list"
+                  ]
+                }
+              },
+              "kinds": [
+                "object"
+              ]
+            },
+            "minecraft:spell_effects": {
+              "fields": {
+                "add_effects": {
+                  "element": {
+                    "fields": {
+                      "display_on_screen_animation": {
+                        "kinds": [
+                          "bool"
+                        ]
+                      },
+                      "duration": {
+                        "kinds": [
+                          "int"
+                        ]
+                      },
+                      "effect": {
+                        "kinds": [
+                          "string"
+                        ]
+                      }
+                    },
+                    "kinds": [
+                      "object"
+                    ]
+                  },
+                  "kinds": [
+                    "list"
+                  ]
+                },
+                "remove_effects": {
+                  "kinds": [
+                    "string"
+                  ]
+                }
+              },
+              "kinds": [
+                "object"
+              ]
+            },
+            "minecraft:timer": {
+              "fields": {
+                "looping": {
+                  "kinds": [
+                    "bool"
+                  ]
+                },
+                "time": {
+                  "element": {
+                    "kinds": [
+                      "number"
+                    ]
+                  },
+                  "kinds": [
+                    "list"
+                  ]
+                },
+                "time_down_event": {
+                  "fields": {
+                    "event": {
+                      "kinds": [
+                        "string"
+                      ]
+                    },
+                    "target": {
+                      "kinds": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "kinds": [
+                    "object"
+                  ]
+                }
+              },
+              "kinds": [
+                "object"
+              ]
+            },
+            "minecraft:type_family": {
+              "fields": {
+                "family": {
+                  "element": {
+                    "kinds": [
+                      "string"
+                    ]
+                  },
+                  "kinds": [
+                    "list"
+                  ]
+                }
+              },
+              "kinds": [
+                "object"
+              ]
+            }
+          },
+          "kinds": [
+            "object"
+          ]
+        }
+      },
+      "docs": "https://learn.microsoft.com/en-us/minecraft/creator/reference/content/entityreference/",
+      "exclusive_root": false,
+      "family": "entity",
+      "files": 0,
+      "format_values": [
+        "beta"
+      ],
+      "roots": [
+        "minecraft:entity"
+      ],
+      "scope": "behavior",
+      "shape": {
+        "fields": {
+          "format_version": {
+            "kinds": [
+              "string"
+            ],
+            "required": true
+          },
+          "minecraft:entity": {
+            "fields": {
+              "component_groups": {
+                "dynamic_map": true,
+                "fields": {
+                  "value": {
+                    "kinds": [
+                      "ref:#EntityComponents"
+                    ]
+                  }
+                },
+                "kinds": [
+                  "object"
+                ]
+              },
+              "components": {
+                "kinds": [
+                  "ref:#EntityComponents"
+                ]
+              },
+              "description": {
+                "fields": {
+                  "identifier": {
+                    "kinds": [
+                      "string"
+                    ],
+                    "required": true
+                  },
+                  "is_spawnable": {
+                    "kinds": [
+                      "bool"
+                    ]
+                  },
+                  "is_summonable": {
+                    "kinds": [
+                      "bool"
+                    ]
+                  },
+                  "spawn_category": {
+                    "kinds": [
+                      "string"
+                    ]
+                  }
+                },
+                "kinds": [
+                  "object"
+                ],
+                "required": true
+              },
+              "events": {
+                "dynamic_map": true,
+                "fields": {
+                  "minecraft:clear_add_raid_omen": {
+                    "fields": {
+                      "add": {
+                        "fields": {
+                          "component_groups": {
+                            "element": {
+                              "kinds": [
+                                "string"
+                              ]
+                            },
+                            "kinds": [
+                              "list"
+                            ]
+                          }
+                        },
+                        "kinds": [
+                          "object"
+                        ]
+                      },
+                      "remove": {
+                        "fields": {
+                          "component_groups": {
+                            "element": {
+                              "kinds": [
+                                "string"
+                              ]
+                            },
+                            "kinds": [
+                              "list"
+                            ]
+                          }
+                        },
+                        "kinds": [
+                          "object"
+                        ]
+                      }
+                    },
+                    "kinds": [
+                      "object"
+                    ]
+                  },
+                  "minecraft:gain_raid_omen": {
+                    "fields": {
+                      "add": {
+                        "fields": {
+                          "component_groups": {
+                            "element": {
+                              "kinds": [
+                                "string"
+                              ]
+                            },
+                            "kinds": [
+                              "list"
+                            ]
+                          }
+                        },
+                        "kinds": [
+                          "object"
+                        ]
+                      }
+                    },
+                    "kinds": [
+                      "object"
+                    ]
+                  },
+                  "minecraft:remove_raid_trigger": {
+                    "fields": {
+                      "remove": {
+                        "fields": {
+                          "component_groups": {
+                            "element": {
+                              "kinds": [
+                                "string"
+                              ]
+                            },
+                            "kinds": [
+                              "list"
+                            ]
+                          }
+                        },
+                        "kinds": [
+                          "object"
+                        ]
+                      }
+                    },
+                    "kinds": [
+                      "object"
+                    ]
+                  },
+                  "minecraft:trigger_raid": {
+                    "fields": {
+                      "add": {
+                        "fields": {
+                          "component_groups": {
+                            "element": {
+                              "kinds": [
+                                "string"
+                              ]
+                            },
+                            "kinds": [
+                              "list"
+                            ]
+                          }
+                        },
+                        "kinds": [
+                          "object"
+                        ]
+                      }
+                    },
+                    "kinds": [
+                      "object"
+                    ]
+                  }
+                },
+                "kinds": [
+                  "null",
+                  "object"
+                ]
+              }
+            },
+            "kinds": [
+              "object"
+            ],
+            "required": true
+          }
+        },
+        "kinds": [
+          "object"
+        ]
+      },
+      "stable": true,
+      "version": "beta"
+    }
+  ]
+}

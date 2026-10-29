@@ -6,183 +6,104 @@ package v1_26_10
 	"particle_effect": {
 		"components"?: {
 			"minecraft:emitter_initialization"?: {
-				"creation_expression"?: {
-					"expression"?: string
-					"version"?: int
-					...
-				}
-				"per_update_expression"?: {
-					"expression"?: string
-					"version"?: int
-					...
-				}
+				"creation_expression"?: string
+				"per_update_expression"?: (number | string)
 				...
 			}
 			"minecraft:emitter_lifetime_expression"?: {
-				"activation_expression"?: {
-					"expression"?: string
-					"version"?: int
-					...
-				}
-				"expiration_expression"?: (int | {
-					"expression"?: string
-					"version"?: int
-					...
-				})
+				"activation_expression"?: (number | string)
+				"expiration_expression"?: (number | string)
 				...
 			}
 			"minecraft:emitter_lifetime_looping"?: {
-				"active_time"?: (int | number | {
-					"expression"?: string
-					"version"?: int
-					...
-				})
+				"active_time"?: (number | string)
+				"sleep_time"?: number
 				...
 			}
 			"minecraft:emitter_lifetime_once"?: {
-				"active_time"?: (int | number | {
-					"expression"?: string
-					"version"?: int
-					...
-				})
+				"active_time"?: (number | string)
 				...
 			}
 			"minecraft:emitter_local_space"?: {
 				"position"?: bool
 				"rotation"?: bool
+				"velocity"?: bool
 				...
 			}
 			"minecraft:emitter_rate_instant"?: {
-				"num_particles"?: (int | {
-					"expression"?: string
-					"version"?: int
-					...
-				})
+				"num_particles"?: (number | string)
 				...
 			}
 			"minecraft:emitter_rate_manual"?: {
-				"max_particles"?: int
+				"max_particles"?: (int | number)
 				...
 			}
 			"minecraft:emitter_rate_steady"?: {
-				"max_particles"?: (int | {
-					"expression"?: string
-					"version"?: int
-					...
-				})
-				"spawn_rate"?: (int | {
-					"expression"?: string
-					"version"?: int
-					...
-				})
+				"max_particles"?: (number | string)
+				"spawn_rate"?: (number | string)
 				...
 			}
 			"minecraft:emitter_shape_box"?: {
-				"direction"?: ([...((int | number | {
-						"expression"?: string
-						"version"?: int
-						...
-					}))] | string)
+				"direction"?: ([...((int | number | string))] | string)
 				"half_dimensions"?: [...((int | number))]
-				"offset"?: [...((int | number | {
-						"expression"?: string
-						"version"?: int
-						...
-					}))]
+				"offset"?: [...((int | number | string))]
 				"surface_only"?: bool
 				...
 			}
 			"minecraft:emitter_shape_custom"?: {
-				"direction"?: [...((int | number | {
-						"expression"?: string
-						"version"?: int
-						...
-					}))]
-				"offset"?: [...((int | number | {
-						"expression"?: string
-						"version"?: int
-						...
-					}))]
+				"direction"?: [...((number | string))]
+				"offset"?: [...((number | string))]
 				...
 			}
 			"minecraft:emitter_shape_disc"?: {
-				"direction"?: [...((int | {
-						"expression"?: string
-						"version"?: int
-						...
-					}))]
-				"offset"?: [...((int | number | {
-						"expression"?: string
-						"version"?: int
-						...
-					}))]
-				"radius"?: (number | {
-					"expression"?: string
-					"version"?: int
-					...
-				})
+				"direction"?: [...((number | string))]
+				"offset"?: [...((number | string))]
+				"plane_normal"?: [...(number)]
+				"radius"?: (number | string)
 				"surface_only"?: bool
 				...
 			}
 			"minecraft:emitter_shape_entity_aabb"?: {
-				"direction"?: [...(int)]
+				"direction"?: [...(number)]
+				"surface_only"?: bool
 				...
 			}
 			"minecraft:emitter_shape_point"?: {
-				"direction"?: [...((int | number | {
-						"expression"?: string
-						"version"?: int
-						...
-					} | string))]
-				"offset"?: [...((int | number | {
-						"expression"?: string
-						"version"?: int
-						...
-					} | string))]
+				"direction"?: [...((number | string))]
+				"offset"?: [...((int | number | string))]
 				...
 			}
 			"minecraft:emitter_shape_sphere"?: {
-				"direction"?: ([...((int | number))] | string)
-				"radius"?: (int | number)
+				"direction"?: ([...(number)] | string)
+				"offset"?: [...(number)]
+				"radius"?: number
 				"surface_only"?: bool
 				...
 			}
 			"minecraft:particle_appearance_billboard"?: {
 				"direction"?: {
-					"custom_direction"?: [...(int)]
+					"custom_direction"?: [...((int | number))]
 					"min_speed_threshold"?: number
 					"mode"?: string
 					...
 				}
 				"facing_camera_mode"?: string
-				"size"?: [...((int | number | {
-						"expression"?: string
-						"version"?: int
-						...
-					} | string))]
+				"size"?: [...((number | string))]
 				"uv"?: {
 					"flipbook"?: {
-						"base_UV"?: [...(int)]
-						"frames_per_second"?: int
+						"base_UV"?: [...(number)]
+						"frames_per_second"?: number
 						"loop"?: bool
-						"max_frame"?: int
-						"size_UV"?: [...(int)]
-						"step_UV"?: [...(int)]
+						"max_frame"?: number
+						"size_UV"?: [...(number)]
+						"step_UV"?: [...(number)]
 						"stretch_to_lifetime"?: bool
 						...
 					}
 					"texture_height"?: int
 					"texture_width"?: int
-					"uv"?: [...((int | {
-							"expression"?: string
-							"version"?: int
-							...
-						} | string))]
-					"uv_size"?: [...((int | number | {
-							"expression"?: string
-							"version"?: int
-							...
-						} | string))]
+					"uv"?: [...((int | number | string))]
+					"uv_size"?: [...((int | number | string))]
 					...
 				}
 				...
@@ -191,189 +112,88 @@ package v1_26_10
 				...
 			}
 			"minecraft:particle_appearance_tinting"?: {
-				"color"?: ([...((int | number | {
-						"expression"?: string
-						"version"?: int
-						...
-					}))] | {
+				"color"?: ([...((number | string))] | {
 					"gradient"?: (number | {
-						"0.000000"?: [...((int | number | {
-								"expression"?: string
-								"version"?: int
-								...
-							}))]
-						"0.100000"?: [...((int | {
-								"expression"?: string
-								"version"?: int
-								...
-							}))]
-						"0.250000"?: [...((int | number))]
-						"0.300000"?: [...((int | number))]
-						"0.500000"?: [...((int | number))]
-						"0.700000"?: [...((int | {
-								"expression"?: string
-								"version"?: int
-								...
-							}))]
-						"0.750000"?: [...((int | number))]
-						"1.000000"?: [...((int | number | {
-								"expression"?: string
-								"version"?: int
-								...
-							}))]
-						"1.700000"?: [...((int | {
-								"expression"?: string
-								"version"?: int
-								...
-							}))]
+						"0.000000"?: [...((int | number | string))]
+						"0.100000"?: [...((number | string))]
+						"0.250000"?: [...(number)]
+						"0.300000"?: [...(number)]
+						"0.500000"?: [...(number)]
+						"0.700000"?: [...((number | string))]
+						"0.750000"?: [...(number)]
+						"1.000000"?: [...((number | string))]
+						"1.700000"?: [...((number | string))]
 						...
 					})
-					"interpolant"?: (int | number | {
-						"expression"?: string
-						"version"?: int
-						...
-					})
+					"interpolant"?: (int | number | string)
 					...
 				})
 				...
 			}
 			"minecraft:particle_expire_if_not_in_blocks"?: [...(string)]
-			"minecraft:particle_initial_speed"?: (int | [...((int | number | {
-					"expression"?: string
-					"version"?: int
-					...
-				}))] | number | {
-				"expression"?: string
-				"version"?: int
-				...
-			} | string)
+			"minecraft:particle_initial_speed"?: (int | [...((number | string))] | number | string)
 			"minecraft:particle_initial_spin"?: {
-				"rotation"?: {
-					"expression"?: string
-					"version"?: int
-					...
-				}
-				"rotation_rate"?: {
-					"expression"?: string
-					"version"?: int
-					...
-				}
+				"rotation"?: string
+				"rotation_rate"?: string
 				...
 			}
 			"minecraft:particle_initialization"?: {
-				"per_render_expression"?: {
-					"expression"?: string
-					"version"?: int
-					...
-				}
-				"per_update_expression"?: {
-					"expression"?: string
-					"version"?: int
-					...
-				}
+				"per_render_expression"?: string
+				"per_update_expression"?: (number | string)
 				...
 			}
-			"minecraft:particle_kill_plane"?: [...(int)]
+			"minecraft:particle_kill_plane"?: [...(number)]
 			"minecraft:particle_lifetime_expression"?: {
-				"max_lifetime"?: (int | number | {
-					"expression"?: string
-					"version"?: int
-					...
-				} | string)
+				"expiration_expression"?: number
+				"max_lifetime"?: (int | number | string)
 				...
 			}
 			"minecraft:particle_motion_collision"?: {
-				"coefficient_of_restitution"?: (int | number)
+				"coefficient_of_restitution"?: number
 				"collision_drag"?: (int | number)
 				"collision_radius"?: number
-				"enabled"?: (int | {
-					"expression"?: string
-					"version"?: int
-					...
-				})
+				"enabled"?: (number | string)
 				"events"?: [...({
 						"event"?: string
+						"min_speed"?: number
 						...
 					})]
 				"expire_on_contact"?: bool
 				...
 			}
 			"minecraft:particle_motion_dynamic"?: {
-				"linear_acceleration"?: [...((int | number | {
-						"expression"?: string
-						"version"?: int
-						...
-					}))]
-				"linear_drag_coefficient"?: (int | number | {
-					"expression"?: string
-					"version"?: int
-					...
-				})
-				"rotation_acceleration"?: {
-					"expression"?: string
-					"version"?: int
-					...
-				}
+				"linear_acceleration"?: [...((int | number | string))]
+				"linear_drag_coefficient"?: (number | string)
+				"rotation_acceleration"?: (number | string)
+				"rotation_drag_coefficient"?: number
 				...
 			}
 			"minecraft:particle_motion_parametric"?: {
-				"relative_position"?: [...((int | {
-						"expression"?: string
-						"version"?: int
-						...
-					}))]
-				"rotation"?: (int | {
-					"expression"?: string
-					"version"?: int
-					...
-				})
+				"relative_position"?: [...((number | string))]
+				"rotation"?: (number | string)
 				...
 			}
 			...
 		}
 		"curves"?: {
 			"variable.shrink"?: {
-				"horizontal_range"?: {
-					"expression"?: string
-					"version"?: int
-					...
-				}
-				"input"?: {
-					"expression"?: string
-					"version"?: int
-					...
-				}
-				"nodes"?: [...(int)]
+				"horizontal_range"?: string
+				"input"?: string
+				"nodes"?: [...(number)]
 				"type"?: string
 				...
 			}
 			"variable.smash_particle"?: {
-				"horizontal_range"?: {
-					"expression"?: string
-					"version"?: int
-					...
-				}
-				"input"?: {
-					"expression"?: string
-					"version"?: int
-					...
-				}
-				"nodes"?: [...(int)]
+				"horizontal_range"?: string
+				"input"?: string
+				"nodes"?: [...(number)]
 				"type"?: string
 				...
 			}
 			"variable.speed"?: {
-				"horizontal_range"?: {
-					"expression"?: string
-					"version"?: int
-					...
-				}
-				"input"?: {
-					"expression"?: string
-					"version"?: int
-					...
-				}
-				"nodes"?: [...(int)]
+				"horizontal_range"?: string
+				"input"?: string
+				"nodes"?: [...(number)]
 				"type"?: string
 				...
 			}
@@ -397,8 +217,11 @@ package v1_26_10
 				...
 			}
 			"splash"?: {
+				"expression"?: number
+				"log"?: string
 				"particle_effect"?: {
 					"effect"?: string
+					"pre_effect_expression"?: number
 					"type"?: string
 					...
 				}

@@ -1175,11 +1175,7 @@ package v1_26_20
 	}
 	"minecraft:experience_reward"?: {
 		"on_bred"?: string
-		"on_death"?: ({
-			"expression"?: string
-			"version"?: int
-			...
-		} | string)
+		"on_death"?: string
 		...
 	}
 	"minecraft:fire_immune"?: {

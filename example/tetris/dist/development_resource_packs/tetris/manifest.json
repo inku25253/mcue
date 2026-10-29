@@ -1,0 +1,29 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "mcue sample: Tetris (resources)",
+    "min_engine_version": [
+      1,
+      26,
+      0
+    ],
+    "name": "Tetris",
+    "uuid": "6be78f55-66f9-49a5-9508-947be6b9b466",
+    "version": [
+      1,
+      0,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "be65550d-41b1-45c4-80c6-e4a763a6b722",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

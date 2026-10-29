@@ -1,0 +1,48 @@
+{
+  "differences": {
+    "resource_pack/particles/geyser_plume.particle.json": {
+      "compiled_value": false,
+      "component_offset": 128,
+      "component_prefix_hex": "51 a8 4c a6 01 00 00",
+      "mcb_sha256": "5b35ae6fa83ecea25573e61d5ba23f994cbd229d8bae2fcb33f306a1b7bef4cd",
+      "path": [
+        "particle_effect",
+        "components",
+        "minecraft:emitter_local_space",
+        "velocity"
+      ],
+      "sample_value": true,
+      "source": "resource_packs/vanilla_1.26.30/__brarchive/particles.brarchive#/geyser_plume.particle.json"
+    },
+    "resource_pack/particles/noxious_gas_particle.json": {
+      "compiled_value": false,
+      "component_offset": 118,
+      "component_prefix_hex": "51 a8 4c a6 01 01 00",
+      "mcb_sha256": "a2deac0ffb161f302447e91f8956da5e5175f85f3a54dec8e5c37d8bd56c1704",
+      "path": [
+        "particle_effect",
+        "components",
+        "minecraft:emitter_local_space",
+        "velocity"
+      ],
+      "sample_value": true,
+      "source": "resource_packs/vanilla_1.26.30/__brarchive/particles.brarchive#/noxious_gas_particle.json"
+    },
+    "resource_pack/particles/sulfur_bubble_particle.json": {
+      "compiled_value": false,
+      "component_offset": 173,
+      "component_prefix_hex": "51 a8 4c a6 01 01 00",
+      "mcb_sha256": "516b04a9558a58f7d849508e33275e1a19ee1e140a7b8cbc2bd924bb7682a18d",
+      "path": [
+        "particle_effect",
+        "components",
+        "minecraft:emitter_local_space",
+        "velocity"
+      ],
+      "sample_value": true,
+      "source": "resource_packs/vanilla_1.26.30/__brarchive/particles.brarchive#/sulfur_bubble_particle.json"
+    }
+  },
+  "explanation": "The same-format official JSON samples explicitly set velocity=true; installed MCB stores velocity as 00 after the two other local-space flags. Preserve the compiled value. These are content differences, not a decoder normalization.",
+  "release": "1.26.60.5"
+}

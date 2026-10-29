@@ -36,6 +36,34 @@ package v1_8_0
 						...
 					})] | {
 					"all_of"?: [...({
+							"all_of"?: [...({
+									"all_of"?: [...({
+											"operator"?: string
+											"test"?: string
+											"value"?: string
+											...
+										})]
+									"operator"?: string
+									"test"?: string
+									"value"?: string
+									...
+								})]
+							"any_of"?: [...({
+									"all_of"?: [...({
+											"any_of"?: [...({
+													"test"?: string
+													"value"?: string
+													...
+												})]
+											"operator"?: string
+											"test"?: string
+											"value"?: string
+											...
+										})]
+									"test"?: string
+									"value"?: string
+									...
+								})]
 							"operator"?: string
 							"test"?: string
 							"value"?: string

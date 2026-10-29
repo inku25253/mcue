@@ -9,15 +9,20 @@ package v1_26_10
 				...
 			}
 			"minecraft:camera"?: {
-				"field_of_view"?: int
+				"far_clipping_plane"?: number
+				"field_of_view"?: (int | number)
+				"near_clipping_plane"?: number
 				...
 			}
 			"minecraft:camera_attach_to_player"?: {
+				"locator"?: string
 				...
 			}
 			"minecraft:camera_avoidance"?: {
+				"avoidance_rays_horizontal"?: [...(_)]
+				"avoidance_rays_vertical"?: [...(_)]
 				"distance_constraint_min"?: number
-				"relax_distance_smoothing_spring"?: int
+				"relax_distance_smoothing_spring"?: (int | number)
 				...
 			}
 			"minecraft:camera_direct_look"?: {
@@ -38,17 +43,21 @@ package v1_26_10
 				...
 			}
 			"minecraft:camera_offset"?: {
-				"entity"?: [...(int)]
+				"entity"?: [...((int | number))]
+				"view"?: [...(number)]
 				...
 			}
 			"minecraft:camera_orbit"?: {
-				"azimuth_smoothing_spring"?: int
-				"distance_smoothing_spring"?: int
+				"azimuth_smoothing_spring"?: (int | number)
+				"distance_smoothing_spring"?: (int | number)
 				"invert_x_input"?: bool
-				"polar_angle_max"?: (int | number)
-				"polar_angle_min"?: (int | number)
-				"polar_angle_smoothing_spring"?: int
-				"radius"?: int
+				"invert_y_input"?: bool
+				"polar_angle_max"?: number
+				"polar_angle_min"?: number
+				"polar_angle_smoothing_spring"?: (int | number)
+				"radius"?: (int | number)
+				"yaw_angle_max"?: number
+				"yaw_angle_min"?: number
 				...
 			}
 			"minecraft:camera_perspective_option"?: {

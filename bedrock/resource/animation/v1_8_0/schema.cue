@@ -1213,7 +1213,7 @@ package v1_8_0
 					"rotation"?: [...((number | string))]
 					...
 				}
-				"_|_"?: {
+				"bottom"?: {
 					"position"?: [...(string)]
 					"rotation"?: [...((number | string))]
 					...
@@ -6252,7 +6252,7 @@ package v1_8_0
 					"rotation"?: [...((number | string))]
 					...
 				}
-				"mouth__|_"?: {
+				"mouth_bottom"?: {
 					"rotation"?: {
 						"0.0"?: [...(int)]
 						"0.5"?: [...(int)]
@@ -10183,7 +10183,7 @@ package v1_8_0
 					}
 					...
 				}
-				"tornado__|_"?: {
+				"tornado_bottom"?: {
 					"rotation"?: ([...(int)] | {
 						"0.0"?: [...(int)]
 						"0.625"?: [...(int)]

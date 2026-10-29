@@ -286,8 +286,10 @@ package v1_10_0
 				}
 				"default"?: {
 					"animations"?: [...(({
+							"arms_idle"?: string
 							"attack.positions"?: string
 							"attack.rotations"?: string
+							"baby_arms_idle"?: string
 							"baby_transform"?: string
 							"baby_walk"?: string
 							"baby_zombie_attack_bare_hand"?: string
@@ -387,6 +389,7 @@ package v1_10_0
 							"one_hand_attack"?: string
 							"open"?: string
 							"raising"?: string
+							"ranged_attack"?: string
 							"ranged_charge"?: string
 							"ranged_hold"?: string
 							"riding"?: string
@@ -593,7 +596,11 @@ package v1_10_0
 					...
 				}
 				"grazing"?: {
-					"animations"?: [...(string)]
+					"animations"?: [...(({
+							"baby_grazing"?: string
+							"grazing"?: string
+							...
+						} | string))]
 					"transitions"?: [...({
 							"default"?: string
 							...
@@ -867,11 +874,16 @@ package v1_10_0
 					...
 				}
 				"melee_attack"?: {
-					"animations"?: [...(string)]
+					"animations"?: [...(({
+							"baby_zombie_attack_bare_hand"?: string
+							"zombie_attack_bare_hand"?: string
+							...
+						} | string))]
 					"blend_transition"?: number
 					"blend_via_shortest_path"?: bool
 					"transitions"?: [...({
 							"default"?: string
+							"ranged_attack"?: string
 							...
 						})]
 					...
@@ -1049,6 +1061,19 @@ package v1_10_0
 					"animations"?: [...(string)]
 					"transitions"?: [...({
 							"default"?: string
+							...
+						})]
+					...
+				}
+				"ranged_attack"?: {
+					"animations"?: [...(({
+							"arms_idle"?: string
+							"baby_arms_idle"?: string
+							...
+						} | string))]
+					"transitions"?: [...({
+							"default"?: string
+							"melee_attack"?: string
 							...
 						})]
 					...
@@ -1337,7 +1362,11 @@ package v1_10_0
 					...
 				}
 				"sneaking"?: {
-					"animations"?: [...(string)]
+					"animations"?: [...(({
+							"baby_sneak"?: string
+							"sneak"?: string
+							...
+						} | string))]
 					"blend_transition"?: number
 					"blend_via_shortest_path"?: bool
 					"transitions"?: [...({
@@ -1409,7 +1438,11 @@ package v1_10_0
 					...
 				}
 				"sprinting"?: {
-					"animations"?: [...(string)]
+					"animations"?: [...(({
+							"baby_sprint"?: string
+							"sprint"?: string
+							...
+						} | string))]
 					"transitions"?: [...({
 							"lie_down"?: string
 							"sitting"?: string

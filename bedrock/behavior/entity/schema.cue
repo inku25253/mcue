@@ -24,10 +24,13 @@ import (
 	v1_26_10 "github.com/inku25253/mcue/bedrock/behavior/entity/v1_26_10"
 	v1_26_20 "github.com/inku25253/mcue/bedrock/behavior/entity/v1_26_20"
 	v1_26_30 "github.com/inku25253/mcue/bedrock/behavior/entity/v1_26_30"
+	v1_26_40 "github.com/inku25253/mcue/bedrock/behavior/entity/v1_26_40"
+	v1_26_50 "github.com/inku25253/mcue/bedrock/behavior/entity/v1_26_50"
+	v1_26_60 "github.com/inku25253/mcue/bedrock/behavior/entity/v1_26_60"
 	vbeta "github.com/inku25253/mcue/bedrock/behavior/entity/vbeta"
 )
 #Schema: {
-	FormatVersion="format_version": ("1.13.0" | "1.14.0" | "1.16.0" | "1.17.20" | "1.18.10" | "1.18.20" | "1.18.30" | "1.20.0" | "1.20.80" | "1.21.0" | "1.21.100" | "1.21.130" | "1.21.40" | "1.21.50" | "1.21.60" | "1.21.70" | "1.21.90" | "1.26.0" | "1.26.10" | "1.26.20" | "1.26.30" | "beta")
+	FormatVersion="format_version": ("1.13.0" | "1.14.0" | "1.16.0" | "1.17.20" | "1.18.10" | "1.18.20" | "1.18.30" | "1.20.0" | "1.20.80" | "1.21.0" | "1.21.100" | "1.21.130" | "1.21.40" | "1.21.50" | "1.21.60" | "1.21.70" | "1.21.90" | "1.26.0" | "1.26.10" | "1.26.20" | "1.26.30" | "1.26.40" | "1.26.50" | "1.26.60" | "beta")
 	if FormatVersion == "1.13.0" {
 		v1_13_0.#Schema
 	}
@@ -90,6 +93,15 @@ import (
 	}
 	if FormatVersion == "1.26.30" {
 		v1_26_30.#Schema
+	}
+	if FormatVersion == "1.26.40" {
+		v1_26_40.#Schema
+	}
+	if FormatVersion == "1.26.50" {
+		v1_26_50.#Schema
+	}
+	if FormatVersion == "1.26.60" {
+		v1_26_60.#Schema
 	}
 	if FormatVersion == "beta" {
 		vbeta.#Schema

@@ -6,9 +6,10 @@ import (
 	v1_10_0 "github.com/inku25253/mcue/bedrock/resource/particle/v1_10_0"
 	v1_26_10 "github.com/inku25253/mcue/bedrock/resource/particle/v1_26_10"
 	v1_26_30 "github.com/inku25253/mcue/bedrock/resource/particle/v1_26_30"
+	v1_26_50 "github.com/inku25253/mcue/bedrock/resource/particle/v1_26_50"
 )
 #Schema: {
-	FormatVersion="format_version": ("1.10.0" | "1.26.10" | "1.26.30")
+	FormatVersion="format_version": ("1.10.0" | "1.26.10" | "1.26.30" | "1.26.50")
 	if FormatVersion == "1.10.0" {
 		v1_10_0.#Schema
 	}
@@ -17,5 +18,8 @@ import (
 	}
 	if FormatVersion == "1.26.30" {
 		v1_26_30.#Schema
+	}
+	if FormatVersion == "1.26.50" {
+		v1_26_50.#Schema
 	}
 }

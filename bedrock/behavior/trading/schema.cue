@@ -66,6 +66,7 @@ package trading
 													...
 												})]
 											"item"?: string
+											"price_multiplier"?: number
 											"quantity"?: (int | {
 												"max"?: int
 												"min"?: int
@@ -102,7 +103,12 @@ package trading
 											...
 										})]
 									"item"?: string
-									"quantity"?: int
+									"price_multiplier"?: number
+									"quantity"?: (int | {
+										"max"?: int
+										"min"?: int
+										...
+									})
 									...
 								})]
 							"max_uses"?: int
@@ -125,7 +131,6 @@ package trading
 												"value"?: int
 												...
 											}
-											"functions"?: [...(_)]
 											"item"?: string
 											"price_multiplier"?: number
 											"quantity"?: (int | {
@@ -135,13 +140,20 @@ package trading
 											})
 											...
 										})]
+									"filters"?: {
+										...
+									}
 									"functions"?: [...({
 											"function"?: string
 											...
 										})]
 									"item"?: string
 									"price_multiplier"?: (int | number)
-									"quantity"?: int
+									"quantity"?: (int | {
+										"max"?: int
+										"min"?: int
+										...
+									})
 									...
 								})]
 							"weight"?: int

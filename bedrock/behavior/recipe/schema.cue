@@ -20,9 +20,10 @@ import (
 	v1_21_90 "github.com/inku25253/mcue/bedrock/behavior/recipe/v1_21_90"
 	v1_26_0 "github.com/inku25253/mcue/bedrock/behavior/recipe/v1_26_0"
 	v1_26_30 "github.com/inku25253/mcue/bedrock/behavior/recipe/v1_26_30"
+	v1_26_50 "github.com/inku25253/mcue/bedrock/behavior/recipe/v1_26_50"
 )
 #Schema: {
-	FormatVersion="format_version": ("1.12" | "1.14" | "1.16" | "1.19" | "1.20.10" | "1.20.30" | "1.20.60" | "1.21.100" | "1.21.110" | "1.21.30" | "1.21.40" | "1.21.50" | "1.21.60" | "1.21.80" | "1.21.90" | "1.26.0" | "1.26.30")
+	FormatVersion="format_version": ("1.12" | "1.14" | "1.16" | "1.19" | "1.20.10" | "1.20.30" | "1.20.60" | "1.21.100" | "1.21.110" | "1.21.30" | "1.21.40" | "1.21.50" | "1.21.60" | "1.21.80" | "1.21.90" | "1.26.0" | "1.26.30" | "1.26.50")
 	if FormatVersion == "1.12" {
 		v1_12.#Schema
 	}
@@ -73,5 +74,8 @@ import (
 	}
 	if FormatVersion == "1.26.30" {
 		v1_26_30.#Schema
+	}
+	if FormatVersion == "1.26.50" {
+		v1_26_50.#Schema
 	}
 }

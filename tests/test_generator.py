@@ -143,6 +143,12 @@ class GeneratorTests(unittest.TestCase):
         group_value = next(iter(entity.fields["component_groups"].fields.values()))
         self.assertEqual(group_value.kinds, {"ref:#EntityComponents"})
 
+    def test_bottom_constraint_preserves_field_names(self) -> None:
+        record = {"scope": "resource", "family": "fixture", "version": None, "docs": "fixture", "roots": [], "shape": {"kinds": ["object"], "fields": {"bottom": {"kinds": ["string"]}, "forbidden": {"kinds": ["bottom"]}}}}
+        emitted = generator.emit_schema(record)
+        self.assertIn('"bottom"?: string', emitted)
+        self.assertIn('"forbidden"?: _|_', emitted)
+
 
 class CueContractTests(unittest.TestCase):
     cue = Path(
@@ -207,6 +213,10 @@ x: s.#Schema & {format_version: "1.26.0", "minecraft:entity": {description: {ide
         self.vet(valid % '{type: "int", range: [0, 10], default: false}', False)
         self.vet(valid % '{type: "float", default: 0.5}', False)
         self.vet(valid % '{type: "enum", values: ["idle"], default: true}', False)
+        for version in ("1.26.40", "1.26.50", "1.26.60"):
+            modern = valid.replace('"1.26.0"', f'"{version}"')
+            self.vet(modern % '{type: "float", range: [0, 1], default: 0.5}', True)
+            self.vet(modern % '{type: "float", default: true}', False)
 
     def test_spawn_herd_object_and_array(self) -> None:
         base = '''package fixture
@@ -296,6 +306,54 @@ x: s.#Schema & %s
         self.vet(entity % '{format_version: "9.9.9", "minecraft:entity": {description: {identifier: "x:e"}}}', False)
         self.vet(entity % '{format_version: "1.26.0"}', False)
         self.vet(entity % '{format_version: "1.26.0", "minecraft:entity": {description: {identifier: 42}}}', False)
+
+    def test_modern_block_collision_and_experimental_components(self) -> None:
+        base = '''package fixture
+import s "github.com/inku25253/mcue/bedrock/behavior/block"
+x: s.#Schema & {format_version: "1.26.60", "minecraft:block": {description: {identifier: "test:block"}, components: %s}}
+'''
+        self.vet(base % '{"minecraft:collision_box": [{origin: [-8, 0, -8], size: [16, 24, 16]}], "test:custom": {enabled: true}}', True)
+        self.vet(base % '{"minecraft:collision_box": [{min: [0,0,0], max: [16,24,16]}], "minecraft:neighbor_change": {neighbor_directions: ["north", "up"]}}', True)
+        self.vet(base % '{"minecraft:collision_box": false}', True)
+        self.vet(base % '{"minecraft:collision_box": {origin: [-8,0,-8], size: [16,16,16]}}', False)
+        self.vet(base % '{"minecraft:collision_box": [{min: [0,0], max: [16,24,16]}]}', False)
+        self.vet(base % '{"minecraft:neighbor_change": {neighbor_directions: ["sideways"]}}', False)
+        legacy = base.replace('"1.26.60"', '"1.26.0"')
+        self.vet(legacy % '{"minecraft:collision_box": {origin: [-8,0,-8], size: [16,16,16]}}', True)
+
+    def test_versioned_loot_table_and_legacy_import(self) -> None:
+        base = '''package fixture
+import s "github.com/inku25253/mcue/bedrock/behavior/loot_table"
+x: s.#Schema & %s
+'''
+        self.vet(base % '{pools: []}', True)
+        self.vet(base % '{format_version: "1.26.60", pools: []}', True)
+        self.vet(base % '{format_version: "1.26.60", pools: [{rolls: "many"}]}', False)
+        self.vet(base % '{format_version: "9.9.9", pools: []}', False)
+
+    def test_new_entity_constraints_and_shared_components(self) -> None:
+        base = '''package fixture
+import s "github.com/inku25253/mcue/bedrock/behavior/entity"
+x: s.#Schema & {format_version: "%s", "minecraft:entity": {description: {identifier: "test:entity"}, components: %s}}
+'''
+        self.vet(base % ('1.26.60', '{"minecraft:movement.jump": {jump_delay: {min: 0.2, max: 0.5}}, "minecraft:rideable": {seats: []}, "minecraft:trail": {radius: 16, force_replace_matched_blocks: true}}'), True)
+        self.vet(base % ('1.26.60', '{"minecraft:movement.jump": {jump_delay: [0.2, 0.5]}}'), False)
+        self.vet(base % ('1.26.60', '{"minecraft:rideable": {seats: {position: [0,0,0]}}}'), False)
+        self.vet(base % ('1.26.60', '{"minecraft:trail": {radius: 17}}'), False)
+        self.vet(base % ('1.26.60', '{"minecraft:buoyant": {movement_type: "sideways"}}'), False)
+        self.vet(base % ('1.26.60', '{"minecraft:transformation": {delay: {value: -1}}}'), False)
+        self.vet(base % ('1.26.60', '{"minecraft:transformation": {delay: {block_chance: 1.1}}}'), False)
+        self.vet(base % ('1.26.60', '{"minecraft:transformation": {begin_transform_sound: "event"}}'), False)
+        self.vet(base % ('1.26.60', '{"minecraft:healable": {items: ["apple"]}}'), False)
+        self.vet(base % ('1.26.60', '{"minecraft:healable": {items: [{item: "apple", effects: {name: "speed"}}]}}'), False)
+        self.vet(base % ('1.26.60', '{"minecraft:attack": {damage: [1, 2]}}'), False)
+        self.vet(base % ('1.26.0', '{"minecraft:attack": {damage: [1, 2]}}'), True)
+        for version in ('1.26.50', '1.26.60'):
+            self.vet(base % (version, '{"minecraft:timer": {time: {min: 1, max: 2}}}'), True)
+            self.vet(base % (version, '{"minecraft:timer": {time: 2}}'), version == '1.26.50')
+        grouped = base.replace('components: %s', 'component_groups: {custom: %s}')
+        self.vet(grouped % ('1.26.60', '{"minecraft:trail": {radius: -2}}'), False)
+        self.vet(base % ('beta', '{"test:custom": {enabled: true}}'), True)
 
 if __name__ == "__main__":
     unittest.main()

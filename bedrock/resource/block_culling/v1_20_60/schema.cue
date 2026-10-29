@@ -13,6 +13,7 @@ package v1_20_60
 				"geometry_part"?: {
 					"bone"?: string
 					"cube"?: int
+					"face"?: string
 					...
 				}
 				...

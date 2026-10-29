@@ -1,0 +1,36 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.tetris.cell": {
+      "arrays": {
+        "textures": {
+          "Array.colors": [
+            "Texture.c0",
+            "Texture.c1",
+            "Texture.c2",
+            "Texture.c3",
+            "Texture.c4",
+            "Texture.c5",
+            "Texture.c6",
+            "Texture.c7"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "ignore_lighting": true,
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "part_visibility": [
+        {
+          "*": "q.property('tetris:color') > 0"
+        }
+      ],
+      "textures": [
+        "Array.colors[q.property('tetris:color')]"
+      ]
+    }
+  }
+}

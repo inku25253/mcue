@@ -8,10 +8,12 @@ import (
 	v1_16_0 "github.com/inku25253/mcue/bedrock/resource/geometry/v1_16_0"
 	v1_21_0 "github.com/inku25253/mcue/bedrock/resource/geometry/v1_21_0"
 	v1_21_120 "github.com/inku25253/mcue/bedrock/resource/geometry/v1_21_120"
+	v1_21_60 "github.com/inku25253/mcue/bedrock/resource/geometry/v1_21_60"
 	v1_26_10 "github.com/inku25253/mcue/bedrock/resource/geometry/v1_26_10"
+	v1_26_50 "github.com/inku25253/mcue/bedrock/resource/geometry/v1_26_50"
 	v1_8_0 "github.com/inku25253/mcue/bedrock/resource/geometry/v1_8_0"
 )
-#Schema: {
+#Schema: *{
 	"format_version"?: _|_
 	"geometry.balloon"?: {
 		"bones"?: [...({
@@ -33,7 +35,7 @@ import (
 	...
 } |
 {
-	FormatVersion="format_version": ("1.10.0" | "1.12.0" | "1.16.0" | "1.21.0" | "1.21.120" | "1.26.10" | "1.8.0")
+	FormatVersion="format_version": ("1.10.0" | "1.12.0" | "1.16.0" | "1.21.0" | "1.21.120" | "1.21.60" | "1.26.10" | "1.26.50" | "1.8.0")
 	if FormatVersion == "1.10.0" {
 		v1_10_0.#Schema
 	}
@@ -49,8 +51,14 @@ import (
 	if FormatVersion == "1.21.120" {
 		v1_21_120.#Schema
 	}
+	if FormatVersion == "1.21.60" {
+		v1_21_60.#Schema
+	}
 	if FormatVersion == "1.26.10" {
 		v1_26_10.#Schema
+	}
+	if FormatVersion == "1.26.50" {
+		v1_26_50.#Schema
 	}
 	if FormatVersion == "1.8.0" {
 		v1_8_0.#Schema

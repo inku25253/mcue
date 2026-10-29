@@ -10,6 +10,7 @@ package v1_21_110
 		}
 		"input"?: string
 		"output"?: string
+		"priority"?: int
 		"tags"?: [...(string)]
 		"unlock"?: [...({
 				"item"?: string

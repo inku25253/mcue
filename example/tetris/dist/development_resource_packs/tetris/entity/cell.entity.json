@@ -1,0 +1,27 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "geometry": {
+        "default": "geometry.tetris.cell"
+      },
+      "identifier": "tetris:cell",
+      "materials": {
+        "default": "entity"
+      },
+      "render_controllers": [
+        "controller.render.tetris.cell"
+      ],
+      "textures": {
+        "c0": "textures/blocks/concrete_white",
+        "c1": "textures/blocks/concrete_light_blue",
+        "c2": "textures/blocks/concrete_yellow",
+        "c3": "textures/blocks/concrete_purple",
+        "c4": "textures/blocks/concrete_lime",
+        "c5": "textures/blocks/concrete_red",
+        "c6": "textures/blocks/concrete_blue",
+        "c7": "textures/blocks/concrete_orange"
+      }
+    }
+  }
+}

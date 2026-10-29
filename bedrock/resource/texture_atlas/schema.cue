@@ -5,7 +5,7 @@ package texture_atlas
 import (
 	v1_21_30 "github.com/inku25253/mcue/bedrock/resource/texture_atlas/v1_21_30"
 )
-#Schema: ([...({
+#Schema: *([...({
 		"atlas_index"?: int
 		"atlas_tile"?: string
 		"atlas_tile_variant"?: int
@@ -189,7 +189,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"bamboo_door__|_"?: {
+		"bamboo_door_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -249,7 +249,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"barrel__|_"?: {
+		"barrel_bottom"?: {
 			"textures"?: [...(string)]
 			...
 		}
@@ -293,7 +293,7 @@ import (
 			"textures"?: [...(string)]
 			...
 		}
-		"bed__|_"?: {
+		"bed_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -301,7 +301,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"bee_nest__|_"?: {
+		"bee_nest_bottom"?: {
 			"textures"?: [...(string)]
 			...
 		}
@@ -345,7 +345,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"bell__|_"?: {
+		"bell_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -473,6 +473,18 @@ import (
 			"textures"?: string
 			...
 		}
+		"black_wool_double_slab"?: {
+			"textures"?: string
+			...
+		}
+		"black_wool_slab"?: {
+			"textures"?: string
+			...
+		}
+		"black_wool_stairs"?: {
+			"textures"?: string
+			...
+		}
 		"blackstone"?: {
 			"textures"?: string
 			...
@@ -570,6 +582,18 @@ import (
 			...
 		}
 		"blue_terracotta"?: {
+			"textures"?: string
+			...
+		}
+		"blue_wool_double_slab"?: {
+			"textures"?: string
+			...
+		}
+		"blue_wool_slab"?: {
+			"textures"?: string
+			...
+		}
+		"blue_wool_stairs"?: {
 			"textures"?: string
 			...
 		}
@@ -734,6 +758,18 @@ import (
 			...
 		}
 		"brown_terracotta"?: {
+			"textures"?: string
+			...
+		}
+		"brown_wool_double_slab"?: {
+			"textures"?: string
+			...
+		}
+		"brown_wool_slab"?: {
+			"textures"?: string
+			...
+		}
+		"brown_wool_stairs"?: {
 			"textures"?: string
 			...
 		}
@@ -1005,7 +1041,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"cactus__|_"?: {
+		"cactus_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -1025,7 +1061,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"cake__|_"?: {
+		"cake_bottom"?: {
 			"textures"?: [...(string)]
 			...
 		}
@@ -1121,7 +1157,7 @@ import (
 			"textures"?: [...(string)]
 			...
 		}
-		"cartography_table__|_"?: {
+		"cartography_table_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -1145,7 +1181,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"cauldron__|_"?: {
+		"cauldron_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -1201,7 +1237,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"chemistry_table__|_"?: {
+		"chemistry_table_bottom"?: {
 			"textures"?: [...(string)]
 			...
 		}
@@ -1229,7 +1265,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"cherry_door__|_"?: {
+		"cherry_door_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -1561,7 +1597,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"composter__|_"?: {
+		"composter_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -1577,7 +1613,7 @@ import (
 			"textures"?: [...(string)]
 			...
 		}
-		"compound_creator__|_"?: {
+		"compound_creator_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -1665,7 +1701,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"copper_door__|_"?: {
+		"copper_door_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -1769,7 +1805,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"crafter__|_"?: {
+		"crafter_bottom"?: {
 			"textures"?: [...(string)]
 			...
 		}
@@ -1793,7 +1829,7 @@ import (
 			"textures"?: [...(string)]
 			...
 		}
-		"crafting_table__|_"?: {
+		"crafting_table_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -1889,6 +1925,10 @@ import (
 			"textures"?: string
 			...
 		}
+		"cushion"?: {
+			"textures"?: [...(string)]
+			...
+		}
 		"cut_copper"?: {
 			"textures"?: string
 			...
@@ -1954,6 +1994,18 @@ import (
 			...
 		}
 		"cyan_terracotta"?: {
+			"textures"?: string
+			...
+		}
+		"cyan_wool_double_slab"?: {
+			"textures"?: string
+			...
+		}
+		"cyan_wool_slab"?: {
+			"textures"?: string
+			...
+		}
+		"cyan_wool_stairs"?: {
 			"textures"?: string
 			...
 		}
@@ -2201,7 +2253,7 @@ import (
 			"textures"?: [...(string)]
 			...
 		}
-		"dirt_podzol__|_"?: {
+		"dirt_podzol_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -2245,7 +2297,7 @@ import (
 			"textures"?: [...(string)]
 			...
 		}
-		"double_plant__|_"?: {
+		"double_plant_bottom"?: {
 			"textures"?: [...(string)]
 			...
 		}
@@ -2269,7 +2321,7 @@ import (
 			"textures"?: [...(string)]
 			...
 		}
-		"dried_ghast__|_"?: {
+		"dried_ghast_bottom"?: {
 			"textures"?: [...(string)]
 			...
 		}
@@ -2349,7 +2401,7 @@ import (
 			"textures"?: [...(string)]
 			...
 		}
-		"element_constructor__|_"?: {
+		"element_constructor_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -2885,7 +2937,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"enchanting_table__|_"?: {
+		"enchanting_table_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -2949,7 +3001,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"endframe__|_"?: {
+		"endframe_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -3017,7 +3069,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"exposed_copper_door__|_"?: {
+		"exposed_copper_door_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -3165,7 +3217,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"flattened_redsandstone__|_"?: {
+		"flattened_redsandstone_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -3181,7 +3233,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"flattened_sandstone__|_"?: {
+		"flattened_sandstone_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -3201,7 +3253,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"flattened_tnt__|_"?: {
+		"flattened_tnt_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -3408,7 +3460,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"grass__|_"?: {
+		"grass_bottom"?: {
 			"textures"?: [...(string)]
 			...
 		}
@@ -3420,7 +3472,7 @@ import (
 			}
 			...
 		}
-		"grass_carried__|_"?: {
+		"grass_carried_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -3492,6 +3544,18 @@ import (
 			"textures"?: string
 			...
 		}
+		"gray_wool_double_slab"?: {
+			"textures"?: string
+			...
+		}
+		"gray_wool_slab"?: {
+			"textures"?: string
+			...
+		}
+		"gray_wool_stairs"?: {
+			"textures"?: string
+			...
+		}
 		"green_candle"?: {
 			"textures"?: [...(string)]
 			...
@@ -3529,6 +3593,18 @@ import (
 			...
 		}
 		"green_terracotta"?: {
+			"textures"?: string
+			...
+		}
+		"green_wool_double_slab"?: {
+			"textures"?: string
+			...
+		}
+		"green_wool_slab"?: {
+			"textures"?: string
+			...
+		}
+		"green_wool_stairs"?: {
 			"textures"?: string
 			...
 		}
@@ -3744,7 +3820,7 @@ import (
 			"textures"?: [...(string)]
 			...
 		}
-		"honey__|_"?: {
+		"honey_bottom"?: {
 			"textures"?: [...(string)]
 			...
 		}
@@ -3808,11 +3884,51 @@ import (
 			"textures"?: string
 			...
 		}
+		"ice_ball"?: {
+			"textures"?: string
+			...
+		}
 		"ice_bomb"?: {
 			"textures"?: string
 			...
 		}
+		"ice_crystal"?: {
+			"textures"?: string
+			...
+		}
 		"ice_packed"?: {
+			"textures"?: string
+			...
+		}
+		"icicle"?: {
+			"textures"?: string
+			...
+		}
+		"icicle_base"?: {
+			"textures"?: string
+			...
+		}
+		"icicle_frustrum"?: {
+			"textures"?: string
+			...
+		}
+		"icicle_middle"?: {
+			"textures"?: string
+			...
+		}
+		"icicle_side"?: {
+			"textures"?: string
+			...
+		}
+		"icicle_tip"?: {
+			"textures"?: string
+			...
+		}
+		"icicle_tip_merge"?: {
+			"textures"?: string
+			...
+		}
+		"icicle_top"?: {
 			"textures"?: string
 			...
 		}
@@ -3988,7 +4104,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"lab_table__|_"?: {
+		"lab_table_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -4036,7 +4152,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"large_fern__|_"?: {
+		"large_fern_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -4088,7 +4204,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"lectern__|_"?: {
+		"lectern_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -4220,6 +4336,18 @@ import (
 			"textures"?: string
 			...
 		}
+		"light_blue_wool_double_slab"?: {
+			"textures"?: string
+			...
+		}
+		"light_blue_wool_slab"?: {
+			"textures"?: string
+			...
+		}
+		"light_blue_wool_stairs"?: {
+			"textures"?: string
+			...
+		}
 		"light_gray_candle"?: {
 			"textures"?: [...(string)]
 			...
@@ -4256,6 +4384,18 @@ import (
 			"textures"?: string
 			...
 		}
+		"light_gray_wool_double_slab"?: {
+			"textures"?: string
+			...
+		}
+		"light_gray_wool_slab"?: {
+			"textures"?: string
+			...
+		}
+		"light_gray_wool_stairs"?: {
+			"textures"?: string
+			...
+		}
 		"lightning_rod"?: {
 			"textures"?: ([...(string)] | string)
 			...
@@ -4264,7 +4404,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"lilac__|_"?: {
+		"lilac_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -4320,6 +4460,18 @@ import (
 			"textures"?: string
 			...
 		}
+		"lime_wool_double_slab"?: {
+			"textures"?: string
+			...
+		}
+		"lime_wool_slab"?: {
+			"textures"?: string
+			...
+		}
+		"lime_wool_stairs"?: {
+			"textures"?: string
+			...
+		}
 		"lodestone_side"?: {
 			"textures"?: [...(string)]
 			...
@@ -4352,7 +4504,7 @@ import (
 			"textures"?: [...(string)]
 			...
 		}
-		"loom__|_"?: {
+		"loom_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -4408,6 +4560,18 @@ import (
 			"textures"?: string
 			...
 		}
+		"magenta_wool_double_slab"?: {
+			"textures"?: string
+			...
+		}
+		"magenta_wool_slab"?: {
+			"textures"?: string
+			...
+		}
+		"magenta_wool_stairs"?: {
+			"textures"?: string
+			...
+		}
 		"magma"?: {
 			"textures"?: string
 			...
@@ -4420,7 +4584,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"mangrove_door__|_"?: {
+		"mangrove_door_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -4484,7 +4648,7 @@ import (
 			"textures"?: [...(string)]
 			...
 		}
-		"material_reducer__|_"?: {
+		"material_reducer_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -4632,7 +4796,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"mushroom_brown__|_"?: {
+		"mushroom_brown_bottom"?: {
 			"textures"?: [...(string)]
 			...
 		}
@@ -4660,7 +4824,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"mushroom_red__|_"?: {
+		"mushroom_red_bottom"?: {
 			"textures"?: [...(string)]
 			...
 		}
@@ -4684,7 +4848,7 @@ import (
 			"textures"?: [...(string)]
 			...
 		}
-		"mushroom_stem__|_"?: {
+		"mushroom_stem_bottom"?: {
 			"textures"?: [...(string)]
 			...
 		}
@@ -4720,7 +4884,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"mycelium__|_"?: {
+		"mycelium_bottom"?: {
 			"textures"?: [...(string)]
 			...
 		}
@@ -4856,7 +5020,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"observer__|_"?: {
+		"observer_bottom"?: {
 			"textures"?: [...(string)]
 			...
 		}
@@ -4928,6 +5092,10 @@ import (
 			"textures"?: string
 			...
 		}
+		"orange_poplar_leaves"?: {
+			"textures"?: [...(string)]
+			...
+		}
 		"orange_shulker_box"?: {
 			"textures"?: string
 			...
@@ -4945,6 +5113,18 @@ import (
 			...
 		}
 		"orange_tulip"?: {
+			"textures"?: string
+			...
+		}
+		"orange_wool_double_slab"?: {
+			"textures"?: string
+			...
+		}
+		"orange_wool_slab"?: {
+			"textures"?: string
+			...
+		}
+		"orange_wool_stairs"?: {
 			"textures"?: string
 			...
 		}
@@ -4996,7 +5176,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"oxidized_copper_door__|_"?: {
+		"oxidized_copper_door_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -5052,7 +5232,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"pale_oak_door__|_"?: {
+		"pale_oak_door_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -5104,7 +5284,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"peony__|_"?: {
+		"peony_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -5180,7 +5360,19 @@ import (
 			"textures"?: string
 			...
 		}
-		"piston__|_"?: {
+		"pink_wool_double_slab"?: {
+			"textures"?: string
+			...
+		}
+		"pink_wool_slab"?: {
+			"textures"?: string
+			...
+		}
+		"pink_wool_stairs"?: {
+			"textures"?: string
+			...
+		}
+		"piston_bottom"?: {
 			"textures"?: [...(string)]
 			...
 		}
@@ -5200,7 +5392,7 @@ import (
 			"textures"?: [...(string)]
 			...
 		}
-		"pitcher_crop__|_"?: {
+		"pitcher_crop_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -5220,7 +5412,7 @@ import (
 			"textures"?: [...(string)]
 			...
 		}
-		"pitcher_plant__|_"?: {
+		"pitcher_plant_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -5317,6 +5509,46 @@ import (
 			...
 		}
 		"polished_tuff"?: {
+			"textures"?: string
+			...
+		}
+		"poplar_door"?: {
+			"textures"?: string
+			...
+		}
+		"poplar_door_bottom"?: {
+			"textures"?: string
+			...
+		}
+		"poplar_door_top"?: {
+			"textures"?: string
+			...
+		}
+		"poplar_log_side"?: {
+			"textures"?: string
+			...
+		}
+		"poplar_log_top"?: {
+			"textures"?: string
+			...
+		}
+		"poplar_planks"?: {
+			"textures"?: string
+			...
+		}
+		"poplar_sapling"?: {
+			"textures"?: string
+			...
+		}
+		"poplar_shelf"?: {
+			"textures"?: [...(string)]
+			...
+		}
+		"poplar_sign"?: {
+			"textures"?: string
+			...
+		}
+		"poplar_trapdoor"?: {
 			"textures"?: string
 			...
 		}
@@ -5500,7 +5732,19 @@ import (
 			"textures"?: string
 			...
 		}
-		"purpur_block__|_"?: {
+		"purple_wool_double_slab"?: {
+			"textures"?: string
+			...
+		}
+		"purple_wool_slab"?: {
+			"textures"?: string
+			...
+		}
+		"purple_wool_stairs"?: {
+			"textures"?: string
+			...
+		}
+		"purpur_block_bottom"?: {
 			"textures"?: [...(string)]
 			...
 		}
@@ -5528,7 +5772,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"quartz_block__|_"?: {
+		"quartz_block_bottom"?: {
 			"textures"?: [...(string)]
 			...
 		}
@@ -5556,7 +5800,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"quartz_slab__|_"?: {
+		"quartz_slab_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -5792,11 +6036,15 @@ import (
 			"textures"?: string
 			...
 		}
+		"red_poplar_leaves"?: {
+			"textures"?: [...(string)]
+			...
+		}
 		"red_sand"?: {
 			"textures"?: string
 			...
 		}
-		"red_sandstone_slab__|_"?: {
+		"red_sandstone_slab_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -5809,6 +6057,10 @@ import (
 			...
 		}
 		"red_sandstone_wall"?: {
+			"textures"?: string
+			...
+		}
+		"red_shrub"?: {
 			"textures"?: string
 			...
 		}
@@ -5832,11 +6084,23 @@ import (
 			"textures"?: string
 			...
 		}
+		"red_wool_double_slab"?: {
+			"textures"?: string
+			...
+		}
+		"red_wool_slab"?: {
+			"textures"?: string
+			...
+		}
+		"red_wool_stairs"?: {
+			"textures"?: string
+			...
+		}
 		"redsandstone"?: {
 			"textures"?: string
 			...
 		}
-		"redsandstone__|_"?: {
+		"redsandstone_bottom"?: {
 			"textures"?: [...(string)]
 			...
 		}
@@ -5888,7 +6152,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"reinforced_deepslate__|_"?: {
+		"reinforced_deepslate_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -5936,7 +6200,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"respawn_anchor__|_"?: {
+		"respawn_anchor_bottom"?: {
 			"textures"?: [...(string)]
 			...
 		}
@@ -5952,7 +6216,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"rose_bush__|_"?: {
+		"rose_bush_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -5980,7 +6244,7 @@ import (
 			"textures"?: [...(string)]
 			...
 		}
-		"sandstone__|_"?: {
+		"sandstone_bottom"?: {
 			"textures"?: [...(string)]
 			...
 		}
@@ -5988,7 +6252,7 @@ import (
 			"textures"?: [...(string)]
 			...
 		}
-		"sandstone_slab__|_"?: {
+		"sandstone_slab_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -6012,7 +6276,7 @@ import (
 			"textures"?: [...(string)]
 			...
 		}
-		"scaffolding__|_"?: {
+		"scaffolding_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -6032,7 +6296,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"sculk_catalyst__|_"?: {
+		"sculk_catalyst_bottom"?: {
 			"textures"?: [...(string)]
 			...
 		}
@@ -6044,7 +6308,7 @@ import (
 			"textures"?: [...(string)]
 			...
 		}
-		"sculk_sensor__|_"?: {
+		"sculk_sensor_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -6064,7 +6328,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"sculk_shrieker__|_"?: {
+		"sculk_shrieker_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -6149,6 +6413,18 @@ import (
 			...
 		}
 		"shears"?: {
+			"textures"?: string
+			...
+		}
+		"shelf_mushroom_large"?: {
+			"textures"?: string
+			...
+		}
+		"shelf_mushroom_particle"?: {
+			"textures"?: string
+			...
+		}
+		"shelf_mushroom_small"?: {
 			"textures"?: string
 			...
 		}
@@ -6248,6 +6524,10 @@ import (
 			"textures"?: string
 			...
 		}
+		"sign_poplar_hanging"?: {
+			"textures"?: string
+			...
+		}
 		"sign_spruce"?: {
 			"textures"?: string
 			...
@@ -6296,7 +6576,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"small_dripleaf_stem__|_"?: {
+		"small_dripleaf_stem_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -6308,7 +6588,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"smithing_table__|_"?: {
+		"smithing_table_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -6328,7 +6608,7 @@ import (
 			"textures"?: [...(string)]
 			...
 		}
-		"smoker__|_"?: {
+		"smoker_bottom"?: {
 			"textures"?: [...(string)]
 			...
 		}
@@ -6380,7 +6660,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"smooth_stone_slab__|_"?: {
+		"smooth_stone_slab_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -6392,7 +6672,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"sniffer_egg__|_"?: {
+		"sniffer_egg_bottom"?: {
 			"textures"?: [...(string)]
 			...
 		}
@@ -6597,6 +6877,10 @@ import (
 			...
 		}
 		"spawn_egg_frog"?: {
+			"textures"?: string
+			...
+		}
+		"spawn_egg_frostbite"?: {
 			"textures"?: string
 			...
 		}
@@ -6928,7 +7212,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"stair_quartz_block__|_"?: {
+		"stair_quartz_block_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -6980,19 +7264,19 @@ import (
 			"textures"?: [...(string)]
 			...
 		}
-		"stone_slab__|_"?: {
+		"stone_slab_bottom"?: {
 			"textures"?: [...(string)]
 			...
 		}
-		"stone_slab__|__2"?: {
+		"stone_slab_bottom_2"?: {
 			"textures"?: [...(string)]
 			...
 		}
-		"stone_slab__|__3"?: {
+		"stone_slab_bottom_3"?: {
 			"textures"?: [...(string)]
 			...
 		}
-		"stone_slab__|__4"?: {
+		"stone_slab_bottom_4"?: {
 			"textures"?: [...(string)]
 			...
 		}
@@ -7036,7 +7320,7 @@ import (
 			"textures"?: [...(string)]
 			...
 		}
-		"stonecutter2__|_"?: {
+		"stonecutter2_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -7052,7 +7336,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"stonecutter__|_"?: {
+		"stonecutter_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -7065,6 +7349,14 @@ import (
 			...
 		}
 		"stonecutter_top"?: {
+			"textures"?: string
+			...
+		}
+		"straw_bed"?: {
+			"textures"?: string
+			...
+		}
+		"straw_bed_particle"?: {
 			"textures"?: string
 			...
 		}
@@ -7172,6 +7464,14 @@ import (
 			"textures"?: string
 			...
 		}
+		"stripped_poplar_log_side"?: {
+			"textures"?: string
+			...
+		}
+		"stripped_poplar_log_top"?: {
+			"textures"?: string
+			...
+		}
 		"stripped_spruce_log_side"?: {
 			"textures"?: string
 			...
@@ -7236,7 +7536,7 @@ import (
 			"textures"?: ([...(string)] | string)
 			...
 		}
-		"sunflower__|_"?: {
+		"sunflower_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -7292,7 +7592,7 @@ import (
 			"textures"?: [...(string)]
 			...
 		}
-		"tall_grass__|_"?: {
+		"tall_grass_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -7332,7 +7632,7 @@ import (
 			"textures"?: [...(string)]
 			...
 		}
-		"tnt__|_"?: {
+		"tnt_bottom"?: {
 			"textures"?: ([...(string)] | string)
 			...
 		}
@@ -7376,7 +7676,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"trial_spawner__|_"?: {
+		"trial_spawner_bottom"?: {
 			"textures"?: [...(string)]
 			...
 		}
@@ -7448,11 +7748,11 @@ import (
 			"textures"?: [...(string)]
 			...
 		}
-		"twisting_vines__|_"?: {
+		"twisting_vines_bottom"?: {
 			"textures"?: [...(string)]
 			...
 		}
-		"underwater_tnt__|_"?: {
+		"underwater_tnt_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -7472,7 +7772,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"vault__|_"?: {
+		"vault_bottom"?: {
 			"textures"?: [...(string)]
 			...
 		}
@@ -7636,7 +7936,7 @@ import (
 			"textures"?: string
 			...
 		}
-		"weathered_copper_door__|_"?: {
+		"weathered_copper_door_bottom"?: {
 			"textures"?: string
 			...
 		}
@@ -7676,7 +7976,7 @@ import (
 			"textures"?: [...(string)]
 			...
 		}
-		"weeping_vines__|_"?: {
+		"weeping_vines_bottom"?: {
 			"textures"?: [...(string)]
 			...
 		}
@@ -7729,6 +8029,18 @@ import (
 			...
 		}
 		"white_tulip"?: {
+			"textures"?: string
+			...
+		}
+		"white_wool_double_slab"?: {
+			"textures"?: string
+			...
+		}
+		"white_wool_slab"?: {
+			"textures"?: string
+			...
+		}
+		"white_wool_stairs"?: {
 			"textures"?: string
 			...
 		}
@@ -7888,6 +8200,10 @@ import (
 			"textures"?: string
 			...
 		}
+		"yellow_poplar_leaves"?: {
+			"textures"?: [...(string)]
+			...
+		}
 		"yellow_shulker_box"?: {
 			"textures"?: string
 			...
@@ -7901,6 +8217,18 @@ import (
 			...
 		}
 		"yellow_terracotta"?: {
+			"textures"?: string
+			...
+		}
+		"yellow_wool_double_slab"?: {
+			"textures"?: string
+			...
+		}
+		"yellow_wool_slab"?: {
+			"textures"?: string
+			...
+		}
+		"yellow_wool_stairs"?: {
 			"textures"?: string
 			...
 		}

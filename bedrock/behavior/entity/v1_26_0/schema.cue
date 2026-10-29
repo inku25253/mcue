@@ -2851,20 +2851,13 @@ package v1_26_0
 				"filters"?: {
 					"all_of"?: [...({
 							"any_of"?: [...({
-									"domain"?: string
 									"operator"?: string
 									"subject"?: string
 									"test"?: string
-									"value"?: (bool | int | string)
+									"value"?: (bool | string)
 									...
 								})]
 							"domain"?: string
-							"none_of"?: [...({
-									"domain"?: string
-									"test"?: string
-									"value"?: string
-									...
-								})]
 							"operator"?: string
 							"subject"?: string
 							"test"?: string
@@ -2954,16 +2947,8 @@ package v1_26_0
 		...
 	} | string)
 	"minecraft:experience_reward"?: {
-		"on_bred"?: ({
-			"expression"?: string
-			"version"?: int
-			...
-		} | string)
-		"on_death"?: (int | {
-			"expression"?: string
-			"version"?: int
-			...
-		} | string)
+		"on_bred"?: string
+		"on_death"?: (int | string)
 		...
 	}
 	"minecraft:explode"?: {
@@ -3433,45 +3418,6 @@ package v1_26_0
 		...
 	}
 	"minecraft:leashable_to"?: {
-		...
-	}
-	"minecraft:looked_at"?: {
-		"field_of_view"?: int
-		"filters"?: {
-			"none_of"?: [...({
-					"domain"?: string
-					"subject"?: string
-					"test"?: string
-					"value"?: (int | string)
-					...
-				})]
-			"operator"?: string
-			"subject"?: string
-			"test"?: string
-			"value"?: int
-			...
-		}
-		"find_players_only"?: bool
-		"line_of_sight_obstruction_type"?: string
-		"look_at_locations"?: [...({
-				"location"?: string
-				"vertical_offset"?: number
-				...
-			})]
-		"looked_at_cooldown"?: number
-		"looked_at_event"?: {
-			"event"?: string
-			"filter"?: string
-			...
-		}
-		"not_looked_at_event"?: {
-			"event"?: string
-			"filter"?: string
-			...
-		}
-		"scale_fov_by_distance"?: bool
-		"search_radius"?: int
-		"set_target"?: string
 		...
 	}
 	"minecraft:loot"?: {
@@ -4516,18 +4462,6 @@ package v1_26_0
 					"slot"?: string
 					...
 				}
-				"emit_particle"?: {
-					"particle"?: string
-					...
-				}
-				"emit_vibration"?: {
-					"vibration"?: string
-					...
-				}
-				"execute_event_on_home_block"?: {
-					"event"?: string
-					...
-				}
 				"filters"?: {
 					"any_of"?: [...({
 							"test"?: string
@@ -4609,9 +4543,6 @@ package v1_26_0
 					"minecraft:silverfish_calm"?: {
 						...
 					}
-					...
-				}
-				"reset_target"?: {
 					...
 				}
 				"sequence"?: [...({

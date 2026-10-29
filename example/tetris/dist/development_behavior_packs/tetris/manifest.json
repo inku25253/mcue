@@ -1,0 +1,54 @@
+{
+  "dependencies": [
+    {
+      "version": "2.0.0",
+      "module_name": "@minecraft/server"
+    },
+    {
+      "uuid": "6be78f55-66f9-49a5-9508-947be6b9b466",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "format_version": 2,
+  "header": {
+    "description": "mcue sample: Tetris (behavior)",
+    "min_engine_version": [
+      1,
+      26,
+      0
+    ],
+    "name": "Tetris",
+    "uuid": "eb496723-7996-4b09-9f4a-2a26a684739f",
+    "version": [
+      1,
+      0,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "f08f718a-45a5-499d-a317-9bd351c7a373",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "script",
+      "uuid": "a43f5cdd-2076-4f2c-b486-da3979a654d3",
+      "version": [
+        1,
+        0,
+        0
+      ],
+      "language": "javascript",
+      "entry": "scripts/main.js"
+    }
+  ]
+}

@@ -14,33 +14,39 @@ package v1_21_0
 							"size"?: [...((int | number))]
 							"uv"?: ([...((int | number))] | {
 								"down"?: {
-									"uv"?: [...(int)]
-									"uv_size"?: [...(int)]
+									"material_instance"?: string
+									"uv"?: [...((int | number))]
+									"uv_size"?: [...((int | number))]
 									...
 								}
 								"east"?: {
-									"uv"?: [...(int)]
-									"uv_size"?: [...(int)]
+									"material_instance"?: string
+									"uv"?: [...((int | number))]
+									"uv_size"?: [...((int | number))]
 									...
 								}
 								"north"?: {
-									"uv"?: [...(int)]
-									"uv_size"?: [...(int)]
+									"material_instance"?: string
+									"uv"?: [...((int | number))]
+									"uv_size"?: [...((int | number))]
 									...
 								}
 								"south"?: {
-									"uv"?: [...(int)]
-									"uv_size"?: [...(int)]
+									"material_instance"?: string
+									"uv"?: [...((int | number))]
+									"uv_size"?: [...((int | number))]
 									...
 								}
 								"up"?: {
-									"uv"?: [...(int)]
-									"uv_size"?: [...(int)]
+									"material_instance"?: string
+									"uv"?: [...((int | number))]
+									"uv_size"?: [...((int | number))]
 									...
 								}
 								"west"?: {
-									"uv"?: [...(int)]
-									"uv_size"?: [...(int)]
+									"material_instance"?: string
+									"uv"?: [...((int | number))]
+									"uv_size"?: [...((int | number))]
 									...
 								}
 								...
@@ -80,6 +86,58 @@ package v1_21_0
 				"visible_bounds_height"?: (int | number)
 				"visible_bounds_offset"?: [...((int | number))]
 				"visible_bounds_width"?: (int | number)
+				...
+			}
+			"item_display_transforms"?: {
+				"firstperson_lefthand"?: {
+					"rotation"?: [...(number)]
+					"scale"?: [...(number)]
+					"translation"?: [...(number)]
+					...
+				}
+				"firstperson_righthand"?: {
+					"rotation"?: [...(number)]
+					"scale"?: [...(number)]
+					"translation"?: [...(number)]
+					...
+				}
+				"fixed"?: {
+					"rotation"?: [...(number)]
+					"scale"?: [...(number)]
+					"translation"?: [...(number)]
+					...
+				}
+				"ground"?: {
+					"rotation"?: [...(number)]
+					"scale"?: [...(number)]
+					"translation"?: [...(number)]
+					...
+				}
+				"gui"?: {
+					"fit_to_frame"?: bool
+					"rotation"?: [...(number)]
+					"scale"?: [...(number)]
+					"translation"?: [...(number)]
+					...
+				}
+				"head"?: {
+					"rotation"?: [...(number)]
+					"scale"?: [...(number)]
+					"translation"?: [...(number)]
+					...
+				}
+				"thirdperson_lefthand"?: {
+					"rotation"?: [...(number)]
+					"scale"?: [...(number)]
+					"translation"?: [...(number)]
+					...
+				}
+				"thirdperson_righthand"?: {
+					"rotation"?: [...(number)]
+					"scale"?: [...(number)]
+					"translation"?: [...(number)]
+					...
+				}
 				...
 			}
 			...

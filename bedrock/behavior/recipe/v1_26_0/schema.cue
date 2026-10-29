@@ -3,12 +3,29 @@
 package v1_26_0
 #Schema: {
 	"format_version": "1.26.0"
-	"minecraft:recipe_material_reduction"?: {
+	"minecraft:recipe_material_reduction": {
+		"description": {
+			"identifier": string
+			...
+		}
 		"input"?: ({
 			...
 		} | string)
+		"output"?: [...({
+				"count"?: int
+				"item"?: string
+				...
+			})]
+		"tags"?: string
 		...
 	}
+	"minecraft:recipe_shaped"?: _|_
+	"minecraft:recipe_shapeless"?: _|_
+	...
+} |
+{
+	"format_version": "1.26.0"
+	"minecraft:recipe_material_reduction"?: _|_
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": string
@@ -40,12 +57,7 @@ package v1_26_0
 } |
 {
 	"format_version": "1.26.0"
-	"minecraft:recipe_material_reduction"?: {
-		"input"?: ({
-			...
-		} | string)
-		...
-	}
+	"minecraft:recipe_material_reduction"?: _|_
 	"minecraft:recipe_shaped"?: _|_
 	"minecraft:recipe_shapeless": {
 		"description": {

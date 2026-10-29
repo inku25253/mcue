@@ -56,7 +56,7 @@ package v1_21_40
 			...
 		}
 		"may_not_attach_to"?: {
-			"_|_"?: string
+			"bottom"?: string
 			...
 		}
 		"may_replace"?: [...(({

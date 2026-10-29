@@ -8,9 +8,11 @@ import (
 	v1_16_100 "github.com/inku25253/mcue/bedrock/behavior/feature_rule/v1_16_100"
 	v1_21_60 "github.com/inku25253/mcue/bedrock/behavior/feature_rule/v1_21_60"
 	v1_26_10 "github.com/inku25253/mcue/bedrock/behavior/feature_rule/v1_26_10"
+	v1_26_40 "github.com/inku25253/mcue/bedrock/behavior/feature_rule/v1_26_40"
+	v1_26_50 "github.com/inku25253/mcue/bedrock/behavior/feature_rule/v1_26_50"
 )
 #Schema: {
-	FormatVersion="format_version": ("1.13.0" | "1.16.0" | "1.16.100" | "1.21.60" | "1.26.10")
+	FormatVersion="format_version": ("1.13.0" | "1.16.0" | "1.16.100" | "1.21.60" | "1.26.10" | "1.26.40" | "1.26.50")
 	if FormatVersion == "1.13.0" {
 		v1_13_0.#Schema
 	}
@@ -25,5 +27,11 @@ import (
 	}
 	if FormatVersion == "1.26.10" {
 		v1_26_10.#Schema
+	}
+	if FormatVersion == "1.26.40" {
+		v1_26_40.#Schema
+	}
+	if FormatVersion == "1.26.50" {
+		v1_26_50.#Schema
 	}
 }

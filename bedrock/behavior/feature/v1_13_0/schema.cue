@@ -295,7 +295,7 @@ package v1_13_0
 		"enforce_survivability_rules": bool
 		"may_attach_to"?: {
 			"auto_rotate"?: bool
-			"_|_"?: string
+			"bottom"?: string
 			"east"?: ([...({
 					"name"?: string
 					"states"?: {
@@ -532,7 +532,7 @@ package v1_13_0
 			"height"?: int
 			"leaf_block"?: string
 			"radius"?: int
-			"wide__|__layer_hole_chance"?: int
+			"wide_bottom_layer_hole_chance"?: int
 			...
 		}
 		"cherry_trunk"?: {
@@ -545,7 +545,7 @@ package v1_13_0
 						"height"?: int
 						"leaf_block"?: string
 						"radius"?: int
-						"wide__|__layer_hole_chance"?: int
+						"wide_bottom_layer_hole_chance"?: int
 						...
 					}
 					...
@@ -768,6 +768,7 @@ package v1_13_0
 					"old_leaf_type"?: string
 					...
 				}
+				"tags"?: string
 				...
 			} | string))]
 		"mega_canopy"?: {

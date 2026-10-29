@@ -5,7 +5,12 @@ package v1_17_0
 	"format_version": "1.17.0"
 	"minecraft:spawn_rules": {
 		"conditions"?: [...({
-				"minecraft:biome_filter"?: {
+				"minecraft:biome_filter"?: ([...({
+						"operator"?: string
+						"test"?: string
+						"value"?: string
+						...
+					})] | {
 					"any_of"?: [...({
 							"operator"?: string
 							"test"?: string
@@ -16,7 +21,7 @@ package v1_17_0
 					"test"?: string
 					"value"?: string
 					...
-				}
+				})
 				"minecraft:brightness_filter"?: {
 					"adjust_for_weather"?: bool
 					"max"?: int
@@ -25,6 +30,11 @@ package v1_17_0
 				}
 				"minecraft:density_limit"?: {
 					"surface"?: int
+					...
+				}
+				"minecraft:difficulty_filter"?: {
+					"max"?: string
+					"min"?: string
 					...
 				}
 				"minecraft:height_filter"?: {
@@ -39,7 +49,14 @@ package v1_17_0
 					"min_size"?: int
 					...
 				})
+				"minecraft:spawn_event"?: {
+					"event"?: string
+					...
+				}
 				"minecraft:spawns_on_block_filter"?: [...(string)]
+				"minecraft:spawns_on_surface"?: {
+					...
+				}
 				"minecraft:spawns_underground"?: {
 					...
 				}

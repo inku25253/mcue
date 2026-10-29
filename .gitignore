@@ -18,6 +18,7 @@ venv/
 
 # Temporary schema verification output
 /schema_ir.recollected.json
+/schema-validation.log
 
 # Editors and operating systems
 .idea/

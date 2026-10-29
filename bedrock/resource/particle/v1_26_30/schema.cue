@@ -7,6 +7,7 @@ package v1_26_30
 		"components"?: {
 			"minecraft:emitter_initialization"?: {
 				"creation_expression"?: string
+				"per_update_expression"?: number
 				...
 			}
 			"minecraft:emitter_lifetime_once"?: {
@@ -20,23 +21,24 @@ package v1_26_30
 				...
 			}
 			"minecraft:emitter_rate_instant"?: {
-				"num_particles"?: int
+				"num_particles"?: number
 				...
 			}
 			"minecraft:emitter_rate_steady"?: {
-				"max_particles"?: (int | string)
-				"spawn_rate"?: (int | string)
+				"max_particles"?: (number | string)
+				"spawn_rate"?: (number | string)
 				...
 			}
 			"minecraft:emitter_shape_box"?: {
-				"direction"?: [...((int | string))]
+				"direction"?: [...((number | string))]
 				"half_dimensions"?: [...(number)]
-				"offset"?: [...((int | number | string))]
+				"offset"?: [...((number | string))]
 				"surface_only"?: bool
 				...
 			}
 			"minecraft:emitter_shape_point"?: {
-				"direction"?: [...((int | string))]
+				"direction"?: [...((number | string))]
+				"offset"?: [...(number)]
 				...
 			}
 			"minecraft:particle_appearance_billboard"?: {
@@ -44,18 +46,19 @@ package v1_26_30
 				"size"?: [...(string)]
 				"uv"?: {
 					"flipbook"?: {
-						"base_UV"?: [...(int)]
-						"frames_per_second"?: int
-						"max_frame"?: int
-						"size_UV"?: [...(int)]
-						"step_UV"?: [...(int)]
+						"base_UV"?: [...(number)]
+						"frames_per_second"?: number
+						"loop"?: bool
+						"max_frame"?: number
+						"size_UV"?: [...(number)]
+						"step_UV"?: [...(number)]
 						"stretch_to_lifetime"?: bool
 						...
 					}
 					"texture_height"?: int
 					"texture_width"?: int
-					"uv"?: [...(int)]
-					"uv_size"?: [...(int)]
+					"uv"?: [...(number)]
+					"uv_size"?: [...(number)]
 					...
 				}
 				...
@@ -68,10 +71,10 @@ package v1_26_30
 						...
 					}))] | {
 					"gradient"?: (number | {
-						"0.0"?: string
-						"0.5"?: string
-						"0.54"?: string
-						"1.0"?: string
+						"0.000000"?: [...(number)]
+						"0.500000"?: [...(number)]
+						"0.540000"?: [...(number)]
+						"1.000000"?: [...(number)]
 						...
 					})
 					"interpolant"?: (number | string)
@@ -80,26 +83,31 @@ package v1_26_30
 				...
 			}
 			"minecraft:particle_expire_if_not_in_blocks"?: [...(string)]
-			"minecraft:particle_initial_speed"?: (int | string)
+			"minecraft:particle_initial_speed"?: (number | string)
 			"minecraft:particle_initialization"?: {
 				"per_render_expression"?: string
+				"per_update_expression"?: number
 				...
 			}
-			"minecraft:particle_kill_plane"?: [...(int)]
+			"minecraft:particle_kill_plane"?: [...(number)]
 			"minecraft:particle_lifetime_expression"?: {
-				"max_lifetime"?: (int | string)
+				"expiration_expression"?: number
+				"max_lifetime"?: (number | string)
 				...
 			}
 			"minecraft:particle_motion_collision"?: {
-				"coefficient_of_restitution"?: (int | number)
-				"collision_drag"?: int
+				"coefficient_of_restitution"?: number
+				"collision_drag"?: number
 				"collision_radius"?: number
+				"enabled"?: number
 				"expire_on_contact"?: bool
 				...
 			}
 			"minecraft:particle_motion_dynamic"?: {
-				"linear_acceleration"?: [...((int | number | string))]
-				"linear_drag_coefficient"?: (int | number)
+				"linear_acceleration"?: [...((number | string))]
+				"linear_drag_coefficient"?: number
+				"rotation_acceleration"?: number
+				"rotation_drag_coefficient"?: number
 				...
 			}
 			...
